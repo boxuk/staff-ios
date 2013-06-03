@@ -7,14 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "StaffListViewController.h"
+#import <FlatUIKit/UIBarButtonItem+FlatUI.h>
+#import <FlatUIKit/UIColor+FlatUI.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    StaffListViewController *staffListVC = [[StaffListViewController alloc] init];
+    UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:staffListVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
+                                  highlightedColor:[UIColor belizeHoleColor]
+                                      cornerRadius:3];
+    [self.window setRootViewController:mainNC];
     [self.window makeKeyAndVisible];
     return YES;
 }
