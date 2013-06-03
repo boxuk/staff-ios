@@ -1,430 +1,1544 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0944A29160A349F0BD3A2E22 /* UISlider+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F24BDBF5974BE8BD49BA96 /* UISlider+FlatUI.h */; };
-		15E5C9AD31824DA5A9CD9E1B /* UINavigationBar+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F14D5E9EDE94E08986783FB /* UINavigationBar+FlatUI.h */; };
-		1772A46CDA9E445DB27164C8 /* FUISwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C5203229F04473889C4B3E2 /* FUISwitch.h */; };
-		18B0E1048DB14E2AAA2CFE35 /* UIColor+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEF3083B36D45D2AB5608F5 /* UIColor+FlatUI.h */; };
-		2F6AF2F1CEF541D385DA6C1E /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 350A508A35B5406C90ECD5FF /* UIImage+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		338FCDDF90DF4D379318940C /* UIImage+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9A71C8AA9446B58985720C /* UIImage+FlatUI.h */; };
-		377E2FBB865B462988BE4D0F /* UIProgressView+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF4D3E202D1484B91158873 /* UIProgressView+FlatUI.h */; };
-		401C4544C6524E728239CE5D /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = AE095E6BA07B479EB48F532D /* UINavigationBar+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		40F05048A31E4BB1A7A85C09 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C3D2B81727478F92D39B0B /* UIFont+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		4C12D15B35744CADB13E6410 /* UITabBar+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 07379E21A14D4A1D95B72610 /* UITabBar+FlatUI.h */; };
-		4D3F0E94175D09B60087748E /* FUICellBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3F0E90175D09B60087748E /* FUICellBackgroundView.h */; };
-		4D3F0E95175D09B60087748E /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F0E91175D09B60087748E /* FUICellBackgroundView.m */; };
-		4D3F0E96175D09B60087748E /* UITableViewCell+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3F0E92175D09B60087748E /* UITableViewCell+FlatUI.h */; };
-		4D3F0E97175D09B60087748E /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F0E93175D09B60087748E /* UITableViewCell+FlatUI.m */; };
-		4F28D952D264419080C14DFE /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEC3CD50B848A9A6CC1609 /* FUIButton.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		5073F161D3BF4C2D8CB73F02 /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945AA45157A460AA55EE541 /* UIProgressView+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		56DA308B126046E0A23206D1 /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = A92E1723652E4434BB01BC2B /* UIBarButtonItem+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		59E3939FB8864160938DB2ED /* UIBarButtonItem+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 840A4D1235BB4E109AE0063C /* UIBarButtonItem+FlatUI.h */; };
-		5F476082B6694718BCE19D18 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ECE8A3E31345A59DF1CC86 /* FUIAlertView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		66F4055F4AA5466DB8724820 /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A0049DEB99EA47F693F7076D /* FUISwitch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		7384A8A0C325400592E5B72F /* FUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D74A2383289F4DD88F71F388 /* FUIAlertView.h */; };
-		83A3AA77C975463098F6ECF8 /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ECE7EA608A4791B28813B2 /* UISlider+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		86AF7A9894394AC1AB542D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FC6E7D1EC049FB890CB211 /* Foundation.framework */; };
-		A19197EBA2EA4CF2A7E93E7C /* UIFont+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E94C2999F8F045DDA8E74A3D /* UIFont+FlatUI.h */; };
-		B330E537710F47FEB8EEA34F /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432CB893D4F4D5D8DE7BB60 /* UITabBar+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		C7DDAAB6E8E641868F1BE7CD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6687E9F4F874EB48C6E1DB1 /* Pods-dummy.m */; };
-		CB5252A49144406D83D3F9EA /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4C30CEC653469E989A6FE0 /* UIStepper+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CE4C30DAD9BB46C4A4491467 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C1C9A193741909EB5B5D6 /* UIColor+FlatUI.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CEA610BCE981494192E0CDB1 /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C605290EBED14F479421A4EA /* FUISegmentedControl.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		E3791B85A06A4AE5B405821E /* FUISegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1845524EDB4CDFB2CCC90B /* FUISegmentedControl.h */; };
-		FC0A5598E8F742C2B2810534 /* FUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E28CB764E64344D8A44D3C9D /* FUIButton.h */; };
-		FE509207159A4EDF8FAFBB19 /* UIStepper+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB273F1991E40A48E17D375 /* UIStepper+FlatUI.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		07379E21A14D4A1D95B72610 /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBar+FlatUI.h"; path = "FlatUIKit/Classes/ios/UITabBar+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		07C851C9C19E4910AA68D17C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
-		16129F6BB14C455A91EB3EF2 /* Lato-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "FlatUIKit/Resources/Lato-Black.ttf"; sourceTree = SOURCE_ROOT; };
-		1CB273F1991E40A48E17D375 /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIStepper+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		2305D9CDF2DE49D191BF0484 /* Lato-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "FlatUIKit/Resources/Lato-Italic.ttf"; sourceTree = SOURCE_ROOT; };
-		264C1C9A193741909EB5B5D6 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIColor+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		350A508A35B5406C90ECD5FF /* UIImage+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIImage+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		3D9A71C8AA9446B58985720C /* UIImage+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIImage+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		43F24BDBF5974BE8BD49BA96 /* UISlider+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+FlatUI.h"; path = "FlatUIKit/Classes/ios/UISlider+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		4D3F0E90175D09B60087748E /* FUICellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUICellBackgroundView.h; sourceTree = "<group>"; };
-		4D3F0E91175D09B60087748E /* FUICellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICellBackgroundView.m; sourceTree = "<group>"; };
-		4D3F0E92175D09B60087748E /* UITableViewCell+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FlatUI.h"; sourceTree = "<group>"; };
-		4D3F0E93175D09B60087748E /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
-		4EEF3083B36D45D2AB5608F5 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIColor+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		5457ECD613624D9F877F6C8A /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "FlatUIKit/Resources/Lato-LightItalic.ttf"; sourceTree = SOURCE_ROOT; };
-		626E22102F46410995BA82C4 /* Lato-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "FlatUIKit/Resources/Lato-Light.ttf"; sourceTree = SOURCE_ROOT; };
-		650A2693C1CD4657BFE54828 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6A1845524EDB4CDFB2CCC90B /* FUISegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUISegmentedControl.h; path = FlatUIKit/Classes/ios/FUISegmentedControl.h; sourceTree = SOURCE_ROOT; };
-		6C5203229F04473889C4B3E2 /* FUISwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUISwitch.h; path = FlatUIKit/Classes/ios/FUISwitch.h; sourceTree = SOURCE_ROOT; };
-		6F14D5E9EDE94E08986783FB /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+FlatUI.h"; path = "FlatUIKit/Classes/ios/UINavigationBar+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		750723908A924E6AB6F9CFA0 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-HairlineItalic.ttf"; path = "FlatUIKit/Resources/Lato-HairlineItalic.ttf"; sourceTree = SOURCE_ROOT; };
-		7945AA45157A460AA55EE541 /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIProgressView+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		840A4D1235BB4E109AE0063C /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIBarButtonItem+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		8432CB893D4F4D5D8DE7BB60 /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+FlatUI.m"; path = "FlatUIKit/Classes/ios/UITabBar+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		8AF4D3E202D1484B91158873 /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIProgressView+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		97DC8EB030844D389B66E82B /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "FlatUIKit/Resources/Lato-BlackItalic.ttf"; sourceTree = SOURCE_ROOT; };
-		A0049DEB99EA47F693F7076D /* FUISwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUISwitch.m; path = FlatUIKit/Classes/ios/FUISwitch.m; sourceTree = SOURCE_ROOT; };
-		A4FCAC8511FB4A649CBE9420 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
-		A7ECE7EA608A4791B28813B2 /* UISlider+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+FlatUI.m"; path = "FlatUIKit/Classes/ios/UISlider+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		A92E1723652E4434BB01BC2B /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIBarButtonItem+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		AE095E6BA07B479EB48F532D /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+FlatUI.m"; path = "FlatUIKit/Classes/ios/UINavigationBar+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		B2E8AC4F3D9E4DED92C91F62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3C3D2B81727478F92D39B0B /* UIFont+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIFont+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		B761023ADBDF4761AE6EA329 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Hairline.ttf"; path = "FlatUIKit/Resources/Lato-Hairline.ttf"; sourceTree = SOURCE_ROOT; };
-		B82B6EAAE7E440FA8C9ED27F /* Lato-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "FlatUIKit/Resources/Lato-Bold.ttf"; sourceTree = SOURCE_ROOT; };
-		C34EC5EC35D34918A54A1E32 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		C605290EBED14F479421A4EA /* FUISegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUISegmentedControl.m; path = FlatUIKit/Classes/ios/FUISegmentedControl.m; sourceTree = SOURCE_ROOT; };
-		CECF73711D5C45678C25E8C8 /* Lato-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "FlatUIKit/Resources/Lato-Regular.ttf"; sourceTree = SOURCE_ROOT; };
-		D6687E9F4F874EB48C6E1DB1 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
-		D74A2383289F4DD88F71F388 /* FUIAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUIAlertView.h; path = FlatUIKit/Classes/ios/FUIAlertView.h; sourceTree = SOURCE_ROOT; };
-		DD71524E74674462B3D7C7F5 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "FlatUIKit/Resources/Lato-BoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
-		E28CB764E64344D8A44D3C9D /* FUIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUIButton.h; path = FlatUIKit/Classes/ios/FUIButton.h; sourceTree = SOURCE_ROOT; };
-		E4AEC3CD50B848A9A6CC1609 /* FUIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUIButton.m; path = FlatUIKit/Classes/ios/FUIButton.m; sourceTree = SOURCE_ROOT; };
-		E94C2999F8F045DDA8E74A3D /* UIFont+FlatUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+FlatUI.h"; path = "FlatUIKit/Classes/ios/UIFont+FlatUI.h"; sourceTree = SOURCE_ROOT; };
-		EA58E17381F943E4B703DA52 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
-		EC4C30CEC653469E989A6FE0 /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+FlatUI.m"; path = "FlatUIKit/Classes/ios/UIStepper+FlatUI.m"; sourceTree = SOURCE_ROOT; };
-		F19BF47955C24778AA450DEF /* CoreText.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		F34C023581D648CB82F8CF57 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
-		F5FC6E7D1EC049FB890CB211 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F6ECE8A3E31345A59DF1CC86 /* FUIAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUIAlertView.m; path = FlatUIKit/Classes/ios/FUIAlertView.m; sourceTree = SOURCE_ROOT; };
-		F846EE6D72E94BEDBE4CD112 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C03F42D3DCA34B918F4DD786 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				86AF7A9894394AC1AB542D66 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2154D1E6A6444431AFA2FFA9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5F850857AAB645FFB115CE72 /* FlatUIKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4E3AB7289ADD45DE9C2E9ACF /* FlatUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				16129F6BB14C455A91EB3EF2 /* Lato-Black.ttf */,
-				97DC8EB030844D389B66E82B /* Lato-BlackItalic.ttf */,
-				B82B6EAAE7E440FA8C9ED27F /* Lato-Bold.ttf */,
-				DD71524E74674462B3D7C7F5 /* Lato-BoldItalic.ttf */,
-				B761023ADBDF4761AE6EA329 /* Lato-Hairline.ttf */,
-				750723908A924E6AB6F9CFA0 /* Lato-HairlineItalic.ttf */,
-				2305D9CDF2DE49D191BF0484 /* Lato-Italic.ttf */,
-				626E22102F46410995BA82C4 /* Lato-Light.ttf */,
-				5457ECD613624D9F877F6C8A /* Lato-LightItalic.ttf */,
-				CECF73711D5C45678C25E8C8 /* Lato-Regular.ttf */,
-			);
-			name = FlatUIKit;
-			sourceTree = "<group>";
-		};
-		5220DB500B0D4573B0087F73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B2E8AC4F3D9E4DED92C91F62 /* libPods.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5F850857AAB645FFB115CE72 /* FlatUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				4D3F0E90175D09B60087748E /* FUICellBackgroundView.h */,
-				4D3F0E91175D09B60087748E /* FUICellBackgroundView.m */,
-				4D3F0E92175D09B60087748E /* UITableViewCell+FlatUI.h */,
-				4D3F0E93175D09B60087748E /* UITableViewCell+FlatUI.m */,
-				D74A2383289F4DD88F71F388 /* FUIAlertView.h */,
-				F6ECE8A3E31345A59DF1CC86 /* FUIAlertView.m */,
-				E28CB764E64344D8A44D3C9D /* FUIButton.h */,
-				E4AEC3CD50B848A9A6CC1609 /* FUIButton.m */,
-				6A1845524EDB4CDFB2CCC90B /* FUISegmentedControl.h */,
-				C605290EBED14F479421A4EA /* FUISegmentedControl.m */,
-				6C5203229F04473889C4B3E2 /* FUISwitch.h */,
-				A0049DEB99EA47F693F7076D /* FUISwitch.m */,
-				840A4D1235BB4E109AE0063C /* UIBarButtonItem+FlatUI.h */,
-				A92E1723652E4434BB01BC2B /* UIBarButtonItem+FlatUI.m */,
-				4EEF3083B36D45D2AB5608F5 /* UIColor+FlatUI.h */,
-				264C1C9A193741909EB5B5D6 /* UIColor+FlatUI.m */,
-				E94C2999F8F045DDA8E74A3D /* UIFont+FlatUI.h */,
-				B3C3D2B81727478F92D39B0B /* UIFont+FlatUI.m */,
-				3D9A71C8AA9446B58985720C /* UIImage+FlatUI.h */,
-				350A508A35B5406C90ECD5FF /* UIImage+FlatUI.m */,
-				6F14D5E9EDE94E08986783FB /* UINavigationBar+FlatUI.h */,
-				AE095E6BA07B479EB48F532D /* UINavigationBar+FlatUI.m */,
-				8AF4D3E202D1484B91158873 /* UIProgressView+FlatUI.h */,
-				7945AA45157A460AA55EE541 /* UIProgressView+FlatUI.m */,
-				43F24BDBF5974BE8BD49BA96 /* UISlider+FlatUI.h */,
-				A7ECE7EA608A4791B28813B2 /* UISlider+FlatUI.m */,
-				1CB273F1991E40A48E17D375 /* UIStepper+FlatUI.h */,
-				EC4C30CEC653469E989A6FE0 /* UIStepper+FlatUI.m */,
-				07379E21A14D4A1D95B72610 /* UITabBar+FlatUI.h */,
-				8432CB893D4F4D5D8DE7BB60 /* UITabBar+FlatUI.m */,
-			);
-			name = FlatUIKit;
-			sourceTree = "<group>";
-		};
-		9FF92CD168AB4388A2398A4F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C34EC5EC35D34918A54A1E32 /* Pods.xcconfig */,
-				A4FCAC8511FB4A649CBE9420 /* Pods-environment.h */,
-				F846EE6D72E94BEDBE4CD112 /* Pods-prefix.pch */,
-				F34C023581D648CB82F8CF57 /* Pods-resources.sh */,
-				EA58E17381F943E4B703DA52 /* Pods-acknowledgements.plist */,
-				07C851C9C19E4910AA68D17C /* Pods-acknowledgements.markdown */,
-				D6687E9F4F874EB48C6E1DB1 /* Pods-dummy.m */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B6B0C50422D149DE9D5B16AC = {
-			isa = PBXGroup;
-			children = (
-				B75C20EDE40A49A8A62BB02A /* Frameworks */,
-				2154D1E6A6444431AFA2FFA9 /* Pods */,
-				5220DB500B0D4573B0087F73 /* Products */,
-				C542179DDBE84325BEF5BC36 /* Resources */,
-				C4E88411826142488BB2C550 /* Targets Support Files */,
-				650A2693C1CD4657BFE54828 /* Podfile */,
-			);
-			sourceTree = "<group>";
-		};
-		B75C20EDE40A49A8A62BB02A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F19BF47955C24778AA450DEF /* CoreText.framework */,
-				F5FC6E7D1EC049FB890CB211 /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4E88411826142488BB2C550 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9FF92CD168AB4388A2398A4F /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C542179DDBE84325BEF5BC36 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4E3AB7289ADD45DE9C2E9ACF /* FlatUIKit */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		5C3792FEA662429A816907A9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7384A8A0C325400592E5B72F /* FUIAlertView.h in Headers */,
-				FC0A5598E8F742C2B2810534 /* FUIButton.h in Headers */,
-				E3791B85A06A4AE5B405821E /* FUISegmentedControl.h in Headers */,
-				1772A46CDA9E445DB27164C8 /* FUISwitch.h in Headers */,
-				59E3939FB8864160938DB2ED /* UIBarButtonItem+FlatUI.h in Headers */,
-				18B0E1048DB14E2AAA2CFE35 /* UIColor+FlatUI.h in Headers */,
-				A19197EBA2EA4CF2A7E93E7C /* UIFont+FlatUI.h in Headers */,
-				338FCDDF90DF4D379318940C /* UIImage+FlatUI.h in Headers */,
-				15E5C9AD31824DA5A9CD9E1B /* UINavigationBar+FlatUI.h in Headers */,
-				377E2FBB865B462988BE4D0F /* UIProgressView+FlatUI.h in Headers */,
-				0944A29160A349F0BD3A2E22 /* UISlider+FlatUI.h in Headers */,
-				FE509207159A4EDF8FAFBB19 /* UIStepper+FlatUI.h in Headers */,
-				4C12D15B35744CADB13E6410 /* UITabBar+FlatUI.h in Headers */,
-				4D3F0E94175D09B60087748E /* FUICellBackgroundView.h in Headers */,
-				4D3F0E96175D09B60087748E /* UITableViewCell+FlatUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		BAFC8E457DDB4F54989C1502 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B4C4BF149E544C3B1B5D1BE /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				DFD396A89A0D413E807AC088 /* Sources */,
-				C03F42D3DCA34B918F4DD786 /* Frameworks */,
-				5C3792FEA662429A816907A9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = B2E8AC4F3D9E4DED92C91F62 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		771E10F1790540B78F9ACF32 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0450;
-			};
-			buildConfigurationList = 5FFF3DF5798C4535BF405ED9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = B6B0C50422D149DE9D5B16AC;
-			productRefGroup = 5220DB500B0D4573B0087F73 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				BAFC8E457DDB4F54989C1502 /* Pods */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DFD396A89A0D413E807AC088 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F476082B6694718BCE19D18 /* FUIAlertView.m in Sources */,
-				4F28D952D264419080C14DFE /* FUIButton.m in Sources */,
-				CEA610BCE981494192E0CDB1 /* FUISegmentedControl.m in Sources */,
-				66F4055F4AA5466DB8724820 /* FUISwitch.m in Sources */,
-				56DA308B126046E0A23206D1 /* UIBarButtonItem+FlatUI.m in Sources */,
-				CE4C30DAD9BB46C4A4491467 /* UIColor+FlatUI.m in Sources */,
-				40F05048A31E4BB1A7A85C09 /* UIFont+FlatUI.m in Sources */,
-				2F6AF2F1CEF541D385DA6C1E /* UIImage+FlatUI.m in Sources */,
-				401C4544C6524E728239CE5D /* UINavigationBar+FlatUI.m in Sources */,
-				5073F161D3BF4C2D8CB73F02 /* UIProgressView+FlatUI.m in Sources */,
-				83A3AA77C975463098F6ECF8 /* UISlider+FlatUI.m in Sources */,
-				CB5252A49144406D83D3F9EA /* UIStepper+FlatUI.m in Sources */,
-				B330E537710F47FEB8EEA34F /* UITabBar+FlatUI.m in Sources */,
-				C7DDAAB6E8E641868F1BE7CD /* Pods-dummy.m in Sources */,
-				4D3F0E95175D09B60087748E /* FUICellBackgroundView.m in Sources */,
-				4D3F0E97175D09B60087748E /* UITableViewCell+FlatUI.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		2C777F27C4674511AD0474C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34EC5EC35D34918A54A1E32 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
-				PODS_ROOT = "${SRCROOT}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7DD9809EF50847399AEFD70B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Release;
-		};
-		CBF1E7AAA4C545018A0C7ED1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-			};
-			name = Debug;
-		};
-		E8BA710EA30541DFBEAA306A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34EC5EC35D34918A54A1E32 /* Pods.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pods-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
-				PODS_ROOT = "${SRCROOT}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		4B4C4BF149E544C3B1B5D1BE /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8BA710EA30541DFBEAA306A /* Release */,
-				2C777F27C4674511AD0474C1 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5FFF3DF5798C4535BF405ED9 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DD9809EF50847399AEFD70B /* Release */,
-				CBF1E7AAA4C545018A0C7ED1 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 771E10F1790540B78F9ACF32 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00D035125EE2444B9D6BAC3F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F38868B210BC49319B6AE3A3</string>
+				<string>D98A86A697594EF884D26C91</string>
+				<string>4CA3E237AD59470DA63E3B76</string>
+				<string>628A1EA2C1D14DF3B85D6FDD</string>
+				<string>EC02EB10DD5A455C95408AA4</string>
+				<string>06893AB0C0C14BBB9860E35C</string>
+				<string>D963DFFE59234801B0CC6AA2</string>
+				<string>E93CD774B49C4C8394FB8AFE</string>
+				<string>A0659CD91BA44575ABB49289</string>
+				<string>7A565F1B03C0403E8DB959FE</string>
+				<string>4E427A00ECF34A6D8EBC4384</string>
+				<string>3FE63C278BF4482FB99571C7</string>
+				<string>FBFD625AF11E4D54A33D2535</string>
+				<string>7C0D0E719A3A43D9985C1CAE</string>
+				<string>B69F628CAC4943A9A1060743</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>042BC2B15EAD49A4905B803A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITableViewCell+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UITableViewCell+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>043F7E64C8CC4CF08391599D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8483412F82334A92BB94459A</string>
+				<string>4FD7A746263648419D665D03</string>
+				<string>2F4E01F509444F5E84B12C65</string>
+				<string>8E0884323B5E479EBA824B04</string>
+				<string>DAE740C957D0490B96B7BB0B</string>
+				<string>E066771494214629B144CFA0</string>
+				<string>B36838E686C7432094028FA1</string>
+				<string>C22123B422134BC09CE7E09D</string>
+				<string>BFB21C33A193492595DBFD55</string>
+				<string>8CEBFBA35F0743079A361A57</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FlatUIKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06893AB0C0C14BBB9860E35C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4EF2F961357F4B1494CE2AF3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>06DC3B9F9C3C40A1B781ABFC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>042BC2B15EAD49A4905B803A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>079EC27499B14E58BFE442C6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2D7C70734B7B441BA2F255EC</string>
+				<string>6B19EA5091094760AD87DEC9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0941A6D36AE24DB1A87760F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AA8E888BA03F4BB4B0CD805E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>0A3EC68C7BEB41A582019213</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F815459FC05C4804800541BC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>0B22170D0D5C4B28A21F45BB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>615B987A15FD463BA9A04CDE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PODS_HEADERS_SEARCH_PATHS</key>
+				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1DE819CDA87B44F0968C096B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITabBar+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UITabBar+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>226CD75134BB42AF8D611634</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E2A639E6313F43F99EC1F1FF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>239B03F287974BC5A04DDF2C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0B22170D0D5C4B28A21F45BB</string>
+				<string>D43F5D82E57F4951B86DDF28</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>27880337B9E14BD6931E6E37</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>043F7E64C8CC4CF08391599D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27EE48D1DD5F4EFE9F9AF7FE</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>079EC27499B14E58BFE442C6</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>6B5C5A7491574E22B9C8A55D</string>
+			<key>productRefGroup</key>
+			<string>97040F1ECA694473BF7B5DE9</string>
+			<key>projectReferences</key>
+			<array/>
+			<key>targets</key>
+			<array>
+				<string>786CA07C5D9B43B5A4721B36</string>
+			</array>
+		</dict>
+		<key>2D7C70734B7B441BA2F255EC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2E9DE897EF82486496F54827</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D1D70EA6A097498E9870D86C</string>
+				<string>F94BCAF01EED4274B7F4A54D</string>
+				<string>F080375F180745759DAFEF59</string>
+				<string>226CD75134BB42AF8D611634</string>
+				<string>51B4DCBB4A7540FB83BDB22D</string>
+				<string>C7A15CDB0A0B4EDE9CA53108</string>
+				<string>D5EE19EB5A764E0181F349C2</string>
+				<string>913627DC2A0A4469B9CB714A</string>
+				<string>0A3EC68C7BEB41A582019213</string>
+				<string>F5E19671118F47B09EB551EA</string>
+				<string>F70A37A9A1DF489B89FF721C</string>
+				<string>0941A6D36AE24DB1A87760F7</string>
+				<string>B80B6474180F4BB5B84243F1</string>
+				<string>7C2B32C059BF472497769F27</string>
+				<string>06DC3B9F9C3C40A1B781ABFC</string>
+				<string>6685761F27274244AB53CD9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2F4E01F509444F5E84B12C65</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Bold.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Bold.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>2F7B26CF1EB849D583A0A3AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIStepper+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIStepper+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>355A7EE52C4B47D388051B33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUISwitch.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUISwitch.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>381808452B314914867DA3A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIFont+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIFont+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>3CA73C04019E4E07B618095A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUIAlertView.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUIAlertView.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>3FE63C278BF4482FB99571C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E134BBE43E02414F825EA171</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>43EBD20D24664326A6F8B5B8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIBarButtonItem+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIBarButtonItem+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>4CA3E237AD59470DA63E3B76</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AAAC367FFEA4E40BBFFE45F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>4E120FB6F83B4129A03841F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUIButton.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUIButton.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>4E427A00ECF34A6D8EBC4384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>782FD515E4C54EA89C08E689</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>4EF2F961357F4B1494CE2AF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIBarButtonItem+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIBarButtonItem+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>4FD7A746263648419D665D03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-BlackItalic.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-BlackItalic.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>51B4DCBB4A7540FB83BDB22D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>355A7EE52C4B47D388051B33</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>5AAAC367FFEA4E40BBFFE45F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUICellBackgroundView.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUICellBackgroundView.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>5FCCB4DA27A949AAA2389F0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUIAlertView.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUIAlertView.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>615B987A15FD463BA9A04CDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>628A1EA2C1D14DF3B85D6FDD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8D950F6C994E44CDAA04D2E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>63059F64C3E1416CA9731006</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreText.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreText.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>6531AFAFF3A543E58A9D3BC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIColor+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIColor+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>6685761F27274244AB53CD9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A40788D0A9A64CA78A808044</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>671C5D97F0DF4E168E7AF009</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIColor+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIColor+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>6B19EA5091094760AD87DEC9</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6B5C5A7491574E22B9C8A55D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E3DE081D0CB4435D9D6DE6A9</string>
+				<string>72798C6A9C16460F906E6E17</string>
+				<string>97040F1ECA694473BF7B5DE9</string>
+				<string>27880337B9E14BD6931E6E37</string>
+				<string>BFB8488E1B764FDDB88C5A67</string>
+				<string>F1C95211E2964A1D9FD9642C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DC94FF2CE754365AD6E43DD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>94CD462CC81E4F85A45F1701</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6F1F1694958041DB8829EC27</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6FE89D4313064A56BC6E2DD7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>72798C6A9C16460F906E6E17</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>795DE42C2AE148E39DC42D4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>782FD515E4C54EA89C08E689</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIProgressView+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIProgressView+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>786CA07C5D9B43B5A4721B36</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>239B03F287974BC5A04DDF2C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2E9DE897EF82486496F54827</string>
+				<string>6DC94FF2CE754365AD6E43DD</string>
+				<string>00D035125EE2444B9D6BAC3F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>6F1F1694958041DB8829EC27</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>795DE42C2AE148E39DC42D4B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3CA73C04019E4E07B618095A</string>
+				<string>5FCCB4DA27A949AAA2389F0D</string>
+				<string>4E120FB6F83B4129A03841F9</string>
+				<string>A7B935DB4FBD472EA20F18FC</string>
+				<string>5AAAC367FFEA4E40BBFFE45F</string>
+				<string>BE001454E3AC4D068058348B</string>
+				<string>8D950F6C994E44CDAA04D2E8</string>
+				<string>E2A639E6313F43F99EC1F1FF</string>
+				<string>E0DE93535EF74F5FA9F88532</string>
+				<string>355A7EE52C4B47D388051B33</string>
+				<string>4EF2F961357F4B1494CE2AF3</string>
+				<string>43EBD20D24664326A6F8B5B8</string>
+				<string>6531AFAFF3A543E58A9D3BC1</string>
+				<string>671C5D97F0DF4E168E7AF009</string>
+				<string>381808452B314914867DA3A5</string>
+				<string>BE9E940C2B734E51BC802353</string>
+				<string>FDE0F0C57C314D3FA84E218E</string>
+				<string>F815459FC05C4804800541BC</string>
+				<string>87126B11B5AE4034B8E16DA4</string>
+				<string>CCB4F6135D544793AE9C6F18</string>
+				<string>782FD515E4C54EA89C08E689</string>
+				<string>B8B678DE557E4BBAB8E7F1FE</string>
+				<string>E134BBE43E02414F825EA171</string>
+				<string>AA8E888BA03F4BB4B0CD805E</string>
+				<string>D0943C1F2AC448EFA0D7A4E8</string>
+				<string>2F7B26CF1EB849D583A0A3AF</string>
+				<string>1DE819CDA87B44F0968C096B</string>
+				<string>97B1A8FD3F584B11AA0E4AFF</string>
+				<string>BB0CC90498D146C887614802</string>
+				<string>042BC2B15EAD49A4905B803A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FlatUIKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A565F1B03C0403E8DB959FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>87126B11B5AE4034B8E16DA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7C0D0E719A3A43D9985C1CAE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1DE819CDA87B44F0968C096B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>7C2B32C059BF472497769F27</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97B1A8FD3F584B11AA0E4AFF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>8483412F82334A92BB94459A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Black.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Black.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>87126B11B5AE4034B8E16DA4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UINavigationBar+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UINavigationBar+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8B05C5303FC94BB5B1B2387D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Pods-environment.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8CEBFBA35F0743079A361A57</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Regular.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Regular.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8D950F6C994E44CDAA04D2E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUISegmentedControl.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUISegmentedControl.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>8E0884323B5E479EBA824B04</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-BoldItalic.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-BoldItalic.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>913627DC2A0A4469B9CB714A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BE9E940C2B734E51BC802353</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>94CD462CC81E4F85A45F1701</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FE89D4313064A56BC6E2DD7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>97040F1ECA694473BF7B5DE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F1F1694958041DB8829EC27</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>972B60C24790452CA5AEA328</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>97B1A8FD3F584B11AA0E4AFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITabBar+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UITabBar+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A0659CD91BA44575ABB49289</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FDE0F0C57C314D3FA84E218E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>A1A7AB86177A4E4080611DD6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>615B987A15FD463BA9A04CDE</string>
+				<string>8B05C5303FC94BB5B1B2387D</string>
+				<string>CCB073581BDE463B97417D50</string>
+				<string>B66A464E22D44919BE459A9A</string>
+				<string>972B60C24790452CA5AEA328</string>
+				<string>EAD540D935924EAA84065AEA</string>
+				<string>A40788D0A9A64CA78A808044</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A40788D0A9A64CA78A808044</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Pods-dummy.m</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A7B935DB4FBD472EA20F18FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUIButton.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUIButton.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>AA8E888BA03F4BB4B0CD805E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UISlider+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UISlider+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>B36838E686C7432094028FA1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Italic.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Italic.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>B66A464E22D44919BE459A9A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-resources.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>B69F628CAC4943A9A1060743</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB0CC90498D146C887614802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>B80B6474180F4BB5B84243F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2F7B26CF1EB849D583A0A3AF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>B8B678DE557E4BBAB8E7F1FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIProgressView+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIProgressView+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BB0CC90498D146C887614802</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITableViewCell+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UITableViewCell+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BE001454E3AC4D068058348B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUICellBackgroundView.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUICellBackgroundView.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BE9E940C2B734E51BC802353</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIFont+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIFont+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BFB21C33A193492595DBFD55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-LightItalic.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-LightItalic.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>BFB8488E1B764FDDB88C5A67</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A1A7AB86177A4E4080611DD6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C22123B422134BC09CE7E09D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Light.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Light.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C7A15CDB0A0B4EDE9CA53108</key>
+		<dict>
+			<key>fileRef</key>
+			<string>43EBD20D24664326A6F8B5B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>CCB073581BDE463B97417D50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-prefix.pch</string>
+			<key>path</key>
+			<string>Pods-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>CCB4F6135D544793AE9C6F18</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UINavigationBar+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UINavigationBar+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>D0943C1F2AC448EFA0D7A4E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIStepper+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIStepper+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>D1D70EA6A097498E9870D86C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5FCCB4DA27A949AAA2389F0D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>D43F5D82E57F4951B86DDF28</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>615B987A15FD463BA9A04CDE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PODS_HEADERS_SEARCH_PATHS</key>
+				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
+				<key>PODS_ROOT</key>
+				<string>${SRCROOT}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D5EE19EB5A764E0181F349C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>671C5D97F0DF4E168E7AF009</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>D963DFFE59234801B0CC6AA2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6531AFAFF3A543E58A9D3BC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>D98A86A697594EF884D26C91</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4E120FB6F83B4129A03841F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>DAE740C957D0490B96B7BB0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-Hairline.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-Hairline.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E066771494214629B144CFA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Lato-HairlineItalic.ttf</string>
+			<key>path</key>
+			<string>FlatUIKit/Resources/Lato-HairlineItalic.ttf</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E0DE93535EF74F5FA9F88532</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FUISwitch.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUISwitch.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E134BBE43E02414F825EA171</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UISlider+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UISlider+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E2A639E6313F43F99EC1F1FF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FUISegmentedControl.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/FUISegmentedControl.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>E3DE081D0CB4435D9D6DE6A9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63059F64C3E1416CA9731006</string>
+				<string>6FE89D4313064A56BC6E2DD7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E93CD774B49C4C8394FB8AFE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>381808452B314914867DA3A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>EAD540D935924EAA84065AEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>EC02EB10DD5A455C95408AA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0DE93535EF74F5FA9F88532</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F080375F180745759DAFEF59</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BE001454E3AC4D068058348B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>F1C95211E2964A1D9FD9642C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>F38868B210BC49319B6AE3A3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3CA73C04019E4E07B618095A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>F5E19671118F47B09EB551EA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CCB4F6135D544793AE9C6F18</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>F70A37A9A1DF489B89FF721C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B8B678DE557E4BBAB8E7F1FE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>F815459FC05C4804800541BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIImage+FlatUI.m</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIImage+FlatUI.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>F94BCAF01EED4274B7F4A54D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7B935DB4FBD472EA20F18FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>FBFD625AF11E4D54A33D2535</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D0943C1F2AC448EFA0D7A4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>FDE0F0C57C314D3FA84E218E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIImage+FlatUI.h</string>
+			<key>path</key>
+			<string>FlatUIKit/Classes/ios/UIImage+FlatUI.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>27EE48D1DD5F4EFE9F9AF7FE</string>
+</dict>
+</plist>

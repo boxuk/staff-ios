@@ -11,9 +11,9 @@
 #import <FlatUIKit/UINavigationBar+FlatUI.h>
 #import <FlatUIKit/UIBarButtonItem+FlatUI.h>
 #import "StaffMemberViewController.h"
-#import "/Users/maxwoolf/Documents/personal-projects/staff-ios/Pods/UITableViewCell+FlatUI.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIFont+FlatUI.h"
+#import "StaffCollection.h"
 @interface StaffListViewController ()
 
 @end
@@ -25,14 +25,24 @@
     self = [super initWithStyle:style];
     if (self) {
         [self setTitle:@"Staff List"];
+        collection = [[StaffCollection alloc] initWithAllStaffMembers];
+        [collection setDelegate:self];
+        [collection connectToAPI];
     }
     return self;
+}
+
+- (void)didFinishReceivingCollection
+{
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
+    
+    [self.tableView reloadData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -50,7 +60,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return [[collection staffCollection] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,8 +72,9 @@
                                        reuseIdentifier:CellIdentifier];
     [[cell textLabel] setFont:[UIFont boldFlatFontOfSize:20]];
     [[cell detailTextLabel] setFont:[UIFont flatFontOfSize:18]];
+    
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    [[cell textLabel] setText:@"Bart Simpson"];
+    [[cell textLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
     [[cell detailTextLabel] setText:@"Developer"];
     
     return cell;
@@ -73,45 +84,6 @@
 {
     return 55;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

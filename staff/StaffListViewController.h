@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StaffCollection.h"
 
-@interface StaffListViewController : UITableViewController
-
+@interface StaffListViewController : UITableViewController <StaffCollectionDelegate>
+{
+    StaffCollection *collection;
+}
 @end

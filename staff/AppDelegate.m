@@ -10,6 +10,7 @@
 #import "StaffListViewController.h"
 #import <FlatUIKit/UIBarButtonItem+FlatUI.h>
 #import <FlatUIKit/UIColor+FlatUI.h>
+#import "StaffCollection.h"
 
 @implementation AppDelegate
 
