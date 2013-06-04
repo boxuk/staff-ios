@@ -12,6 +12,9 @@
 		4D3765BF175D290C0090BB75 /* StaffCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BE175D290C0090BB75 /* StaffCollection.m */; };
 		4D376603175E5FBC0090BB75 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D376602175E5FBC0090BB75 /* AddressBookUI.framework */; };
 		4D376605175E611A0090BB75 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D376604175E611A0090BB75 /* AddressBook.framework */; };
+		4D376607175E708E0090BB75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D376606175E708E0090BB75 /* Default.png */; };
+		4D376609175E70940090BB75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D376608175E70940090BB75 /* Default@2x.png */; };
+		4D37660B175E70B30090BB75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D37660A175E70B30090BB75 /* Default-568h@2x.png */; };
 		4D3F0E8A175D070E0087748E /* StaffListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F0E88175D070E0087748E /* StaffListViewController.m */; };
 		4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F0E89175D070E0087748E /* StaffListViewController.xib */; };
 		4D3F0E8D175D08600087748E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E8C175D08600087748E /* CoreText.framework */; };
@@ -39,6 +42,9 @@
 		4D3765FC175D31500090BB75 /* staffTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "staffTests copy-Info.plist"; path = "/Users/maxwoolf/Documents/personal-projects/staff-ios/staffTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		4D376602175E5FBC0090BB75 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		4D376604175E611A0090BB75 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		4D376606175E708E0090BB75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4D376608175E70940090BB75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4D37660A175E70B30090BB75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4D3F0E87175D070E0087748E /* StaffListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffListViewController.h; sourceTree = "<group>"; };
 		4D3F0E88175D070E0087748E /* StaffListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffListViewController.m; sourceTree = "<group>"; };
 		4D3F0E89175D070E0087748E /* StaffListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffListViewController.xib; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 		4DCBFEA3175D03A6007C8F50 = {
 			isa = PBXGroup;
 			children = (
+				4D37660A175E70B30090BB75 /* Default-568h@2x.png */,
+				4D376608175E70940090BB75 /* Default@2x.png */,
+				4D376606175E708E0090BB75 /* Default.png */,
 				4D3765B7175D206D0090BB75 /* libPods.a */,
 				4DCBFEB5175D03A6007C8F50 /* staff */,
 				4DCBFED3175D03A7007C8F50 /* staffTests */,
@@ -229,6 +238,9 @@
 				4DCBFEC4175D03A6007C8F50 /* Default@2x.png in Resources */,
 				4DCBFEC6175D03A6007C8F50 /* Default-568h@2x.png in Resources */,
 				4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */,
+				4D376607175E708E0090BB75 /* Default.png in Resources */,
+				4D376609175E70940090BB75 /* Default@2x.png in Resources */,
+				4D37660B175E70B30090BB75 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
