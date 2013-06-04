@@ -25,9 +25,6 @@
 		4DCBFEBA175D03A6007C8F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEB8175D03A6007C8F50 /* InfoPlist.strings */; };
 		4DCBFEBC175D03A6007C8F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBFEBB175D03A6007C8F50 /* main.m */; };
 		4DCBFEC0175D03A6007C8F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBFEBF175D03A6007C8F50 /* AppDelegate.m */; };
-		4DCBFEC2175D03A6007C8F50 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC1175D03A6007C8F50 /* Default.png */; };
-		4DCBFEC4175D03A6007C8F50 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC3175D03A6007C8F50 /* Default@2x.png */; };
-		4DCBFEC6175D03A6007C8F50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC5175D03A6007C8F50 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,9 +57,6 @@
 		4DCBFEBD175D03A6007C8F50 /* staff-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "staff-Prefix.pch"; sourceTree = "<group>"; };
 		4DCBFEBE175D03A6007C8F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DCBFEBF175D03A6007C8F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DCBFEC1175D03A6007C8F50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		4DCBFEC3175D03A6007C8F50 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		4DCBFEC5175D03A6007C8F50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4DCBFECD175D03A7007C8F50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4DCBFED5175D03A7007C8F50 /* staffTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "staffTests-Info.plist"; sourceTree = "<group>"; };
 		4DCBFED7175D03A7007C8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -154,9 +148,6 @@
 				4DCBFEB8175D03A6007C8F50 /* InfoPlist.strings */,
 				4DCBFEBB175D03A6007C8F50 /* main.m */,
 				4DCBFEBD175D03A6007C8F50 /* staff-Prefix.pch */,
-				4DCBFEC1175D03A6007C8F50 /* Default.png */,
-				4DCBFEC3175D03A6007C8F50 /* Default@2x.png */,
-				4DCBFEC5175D03A6007C8F50 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,9 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCBFEBA175D03A6007C8F50 /* InfoPlist.strings in Resources */,
-				4DCBFEC2175D03A6007C8F50 /* Default.png in Resources */,
-				4DCBFEC4175D03A6007C8F50 /* Default@2x.png in Resources */,
-				4DCBFEC6175D03A6007C8F50 /* Default-568h@2x.png in Resources */,
 				4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */,
 				4D376607175E708E0090BB75 /* Default.png in Resources */,
 				4D376609175E70940090BB75 /* Default@2x.png in Resources */,
