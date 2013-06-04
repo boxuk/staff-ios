@@ -10,7 +10,7 @@
 #import <FlatUIKit/UIColor+FlatUI.h>
 #import <FlatUIKit/UINavigationBar+FlatUI.h>
 #import <FlatUIKit/UIBarButtonItem+FlatUI.h>
-#import "StaffMemberViewController.h"
+#import <AddressBookUI/AddressBookUI.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIFont+FlatUI.h"
 #import "StaffCollection.h"
@@ -66,7 +66,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [UITableViewCell configureFlatCellWithColor:[UIColor greenSeaColor]
+    UITableViewCell *cell = [UITableViewCell configureFlatCellWithColor:[UIColor belizeHoleColor]
                                          selectedColor:[UIColor cloudsColor]
                                                  style:UITableViewCellStyleValue1
                                        reuseIdentifier:CellIdentifier];
@@ -90,7 +90,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    StaffMemberViewController *staffVC = [[StaffMemberViewController alloc] init];
+    ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
     [self.navigationController pushViewController:staffVC animated:YES];
 }
 

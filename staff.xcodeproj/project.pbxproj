@@ -9,15 +9,12 @@
 /* Begin PBXBuildFile section */
 		4D3765B8175D206D0090BB75 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3765B7175D206D0090BB75 /* libPods.a */; };
 		4D3765BB175D27980090BB75 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BA175D27980090BB75 /* Staff.m */; };
-		4D3765BC175D27980090BB75 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BA175D27980090BB75 /* Staff.m */; };
 		4D3765BF175D290C0090BB75 /* StaffCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BE175D290C0090BB75 /* StaffCollection.m */; };
-		4D3765C0175D290C0090BB75 /* StaffCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BE175D290C0090BB75 /* StaffCollection.m */; };
+		4D376603175E5FBC0090BB75 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D376602175E5FBC0090BB75 /* AddressBookUI.framework */; };
 		4D3F0E8A175D070E0087748E /* StaffListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F0E88175D070E0087748E /* StaffListViewController.m */; };
 		4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F0E89175D070E0087748E /* StaffListViewController.xib */; };
 		4D3F0E8D175D08600087748E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E8C175D08600087748E /* CoreText.framework */; };
 		4D3F0E99175D0B590087748E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E98175D0B580087748E /* QuartzCore.framework */; };
-		4D3F0E9D175D0D8A0087748E /* StaffMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F0E9B175D0D8A0087748E /* StaffMemberViewController.m */; };
-		4D3F0E9E175D0D8A0087748E /* StaffMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F0E9C175D0D8A0087748E /* StaffMemberViewController.xib */; };
 		4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
 		4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
 		4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB3175D03A6007C8F50 /* CoreGraphics.framework */; };
@@ -27,39 +24,24 @@
 		4DCBFEC2175D03A6007C8F50 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC1175D03A6007C8F50 /* Default.png */; };
 		4DCBFEC4175D03A6007C8F50 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC3175D03A6007C8F50 /* Default@2x.png */; };
 		4DCBFEC6175D03A6007C8F50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFEC5175D03A6007C8F50 /* Default-568h@2x.png */; };
-		4DCBFECE175D03A7007C8F50 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFECD175D03A7007C8F50 /* SenTestingKit.framework */; };
-		4DCBFECF175D03A7007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
-		4DCBFED0175D03A7007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
-		4DCBFED8175D03A7007C8F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBFED6175D03A7007C8F50 /* InfoPlist.strings */; };
-		4DCBFEDB175D03A7007C8F50 /* staffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBFEDA175D03A7007C8F50 /* staffTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4DCBFED1175D03A7007C8F50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DCBFEA4175D03A6007C8F50 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DCBFEAB175D03A6007C8F50;
-			remoteInfo = staff;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		38FD12264C2647FCB59B63CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D3765B7175D206D0090BB75 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		4D3765B7175D206D0090BB75 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		4D3765B9175D27980090BB75 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
 		4D3765BA175D27980090BB75 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
 		4D3765BD175D290C0090BB75 /* StaffCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffCollection.h; sourceTree = "<group>"; };
 		4D3765BE175D290C0090BB75 /* StaffCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffCollection.m; sourceTree = "<group>"; };
+		4D3765DF175D311F0090BB75 /* staff copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "staff copy-Info.plist"; path = "/Users/maxwoolf/Documents/personal-projects/staff-ios/staff copy-Info.plist"; sourceTree = "<absolute>"; };
+		4D3765FC175D31500090BB75 /* staffTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "staffTests copy-Info.plist"; path = "/Users/maxwoolf/Documents/personal-projects/staff-ios/staffTests copy-Info.plist"; sourceTree = "<absolute>"; };
+		4D376602175E5FBC0090BB75 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		4D3F0E87175D070E0087748E /* StaffListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffListViewController.h; sourceTree = "<group>"; };
 		4D3F0E88175D070E0087748E /* StaffListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffListViewController.m; sourceTree = "<group>"; };
 		4D3F0E89175D070E0087748E /* StaffListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffListViewController.xib; sourceTree = "<group>"; };
 		4D3F0E8C175D08600087748E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4D3F0E98175D0B580087748E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4D3F0E9A175D0D8A0087748E /* StaffMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffMemberViewController.h; sourceTree = "<group>"; };
-		4D3F0E9B175D0D8A0087748E /* StaffMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffMemberViewController.m; sourceTree = "<group>"; };
-		4D3F0E9C175D0D8A0087748E /* StaffMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffMemberViewController.xib; sourceTree = "<group>"; };
 		4DCBFEAC175D03A6007C8F50 /* staff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFEAF175D03A6007C8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DCBFEB1175D03A6007C8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,7 +55,6 @@
 		4DCBFEC1175D03A6007C8F50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4DCBFEC3175D03A6007C8F50 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4DCBFEC5175D03A6007C8F50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4DCBFECC175D03A7007C8F50 /* staffTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = staffTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFECD175D03A7007C8F50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4DCBFED5175D03A7007C8F50 /* staffTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "staffTests-Info.plist"; sourceTree = "<group>"; };
 		4DCBFED7175D03A7007C8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -86,22 +67,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D376603175E5FBC0090BB75 /* AddressBookUI.framework in Frameworks */,
 				4D3765B8175D206D0090BB75 /* libPods.a in Frameworks */,
 				4D3F0E99175D0B590087748E /* QuartzCore.framework in Frameworks */,
 				4D3F0E8D175D08600087748E /* CoreText.framework in Frameworks */,
 				4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */,
 				4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */,
 				4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DCBFEC8175D03A7007C8F50 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCBFECE175D03A7007C8F50 /* SenTestingKit.framework in Frameworks */,
-				4DCBFECF175D03A7007C8F50 /* UIKit.framework in Frameworks */,
-				4DCBFED0175D03A7007C8F50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +89,8 @@
 				4DCBFEAE175D03A6007C8F50 /* Frameworks */,
 				4DCBFEAD175D03A6007C8F50 /* Products */,
 				1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */,
+				4D3765DF175D311F0090BB75 /* staff copy-Info.plist */,
+				4D3765FC175D31500090BB75 /* staffTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				4DCBFEAC175D03A6007C8F50 /* staff.app */,
-				4DCBFECC175D03A7007C8F50 /* staffTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +105,7 @@
 		4DCBFEAE175D03A6007C8F50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D376602175E5FBC0090BB75 /* AddressBookUI.framework */,
 				4D3F0E98175D0B580087748E /* QuartzCore.framework */,
 				4D3F0E8C175D08600087748E /* CoreText.framework */,
 				4DCBFEAF175D03A6007C8F50 /* UIKit.framework */,
@@ -156,9 +130,6 @@
 				4D3F0E87175D070E0087748E /* StaffListViewController.h */,
 				4D3F0E88175D070E0087748E /* StaffListViewController.m */,
 				4D3F0E89175D070E0087748E /* StaffListViewController.xib */,
-				4D3F0E9A175D0D8A0087748E /* StaffMemberViewController.h */,
-				4D3F0E9B175D0D8A0087748E /* StaffMemberViewController.m */,
-				4D3F0E9C175D0D8A0087748E /* StaffMemberViewController.xib */,
 			);
 			path = staff;
 			sourceTree = "<group>";
@@ -218,25 +189,6 @@
 			productReference = 4DCBFEAC175D03A6007C8F50 /* staff.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4DCBFECB175D03A7007C8F50 /* staffTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DCBFEE1175D03A7007C8F50 /* Build configuration list for PBXNativeTarget "staffTests" */;
-			buildPhases = (
-				4DCBFEC7175D03A7007C8F50 /* Sources */,
-				4DCBFEC8175D03A7007C8F50 /* Frameworks */,
-				4DCBFEC9175D03A7007C8F50 /* Resources */,
-				4DCBFECA175D03A7007C8F50 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DCBFED2175D03A7007C8F50 /* PBXTargetDependency */,
-			);
-			name = staffTests;
-			productName = staffTests;
-			productReference = 4DCBFECC175D03A7007C8F50 /* staffTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,7 +211,6 @@
 			projectRoot = "";
 			targets = (
 				4DCBFEAB175D03A6007C8F50 /* staff */,
-				4DCBFECB175D03A7007C8F50 /* staffTests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,34 +225,12 @@
 				4DCBFEC4175D03A6007C8F50 /* Default@2x.png in Resources */,
 				4DCBFEC6175D03A6007C8F50 /* Default-568h@2x.png in Resources */,
 				4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */,
-				4D3F0E9E175D0D8A0087748E /* StaffMemberViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DCBFEC9175D03A7007C8F50 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCBFED8175D03A7007C8F50 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4DCBFECA175D03A7007C8F50 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		6027FA44AD314009844B43F5 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,31 +269,12 @@
 				4DCBFEBC175D03A6007C8F50 /* main.m in Sources */,
 				4DCBFEC0175D03A6007C8F50 /* AppDelegate.m in Sources */,
 				4D3F0E8A175D070E0087748E /* StaffListViewController.m in Sources */,
-				4D3F0E9D175D0D8A0087748E /* StaffMemberViewController.m in Sources */,
 				4D3765BB175D27980090BB75 /* Staff.m in Sources */,
 				4D3765BF175D290C0090BB75 /* StaffCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCBFEC7175D03A7007C8F50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCBFEDB175D03A7007C8F50 /* staffTests.m in Sources */,
-				4D3765BC175D27980090BB75 /* Staff.m in Sources */,
-				4D3765C0175D290C0090BB75 /* StaffCollection.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4DCBFED2175D03A7007C8F50 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DCBFEAB175D03A6007C8F50 /* staff */;
-			targetProxy = 4DCBFED1175D03A7007C8F50 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4DCBFEB8175D03A6007C8F50 /* InfoPlist.strings */ = {
@@ -470,40 +380,6 @@
 			};
 			name = Release;
 		};
-		4DCBFEE2175D03A7007C8F50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/staff.app/staff";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
-				INFOPLIST_FILE = "staffTests/staffTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		4DCBFEE3175D03A7007C8F50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/staff.app/staff";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
-				INFOPLIST_FILE = "staffTests/staffTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,15 +397,6 @@
 			buildConfigurations = (
 				4DCBFEDF175D03A7007C8F50 /* Debug */,
 				4DCBFEE0175D03A7007C8F50 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DCBFEE1175D03A7007C8F50 /* Build configuration list for PBXNativeTarget "staffTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DCBFEE2175D03A7007C8F50 /* Debug */,
-				4DCBFEE3175D03A7007C8F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

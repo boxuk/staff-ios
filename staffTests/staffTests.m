@@ -7,6 +7,7 @@
 //
 
 #import "staffTests.h"
+#import "Staff.h"
 
 @implementation staffTests
 
@@ -27,6 +28,14 @@
 - (void)testExample
 {
     STFail(@"Unit tests are not implemented yet in staffTests");
+}
+
+- (void)testFullNameReturnsTheFullName
+{
+    Staff *staff = [[Staff alloc] init];
+    [staff setFirst:@"Max"];
+    [staff setLast:@"Woolf"];
+    STAssertEqualObjects(@"Max Woolf", [staff fullName], @"fullName should return the first and last name concatenated with a space");
 }
 
 @end
