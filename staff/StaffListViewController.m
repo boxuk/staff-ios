@@ -91,9 +91,16 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
+    [staffVC setDisplayedProperties:[NSArray arrayWithObjects:
+                                      [NSNumber numberWithInt:kABPersonEmailProperty],
+                                                              nil]];
+    [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
     ABRecordRef ref = ABPersonCreate();
     ABRecordSetValue(ref, kABPersonFirstNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] first]), nil);
     ABRecordSetValue(ref, kABPersonLastNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] last]), nil);
+    ABMutableMultiValueRef emailMultiValue = ABMultiValueCreateMutable(kABPersonEmailProperty);
+    ABMultiValueAddValueAndLabel(emailMultiValue, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] email]), kABWorkLabel, NULL);
+    ABRecordSetValue(ref, kABPersonEmailProperty, emailMultiValue, nil);
     ABRecordSetValue(ref, kABPersonJobTitleProperty, @"Developer", nil);
     [staffVC setDisplayedPerson:ref];
     [self.navigationController pushViewController:staffVC animated:YES];

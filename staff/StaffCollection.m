@@ -44,6 +44,7 @@
         Staff *newStaffMember = [[Staff alloc] init];
         [newStaffMember setFirst:[staff valueForKey:@"first"]];
         [newStaffMember setLast:[staff valueForKey:@"last"]];
+        [newStaffMember setEmail:[staff valueForKey:@"email"]];
         [staffCollection addObject:newStaffMember];
     }
     [delegate didFinishReceivingCollection];
