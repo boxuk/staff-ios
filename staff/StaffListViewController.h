@@ -13,4 +13,6 @@
 {
     StaffCollection *collection;
 }
+
+- (void)didRefresh;
 @end

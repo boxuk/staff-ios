@@ -25,6 +25,12 @@
     self = [super initWithStyle:style];
     if (self) {
         [self setTitle:@"Staff List"];
+        UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
+        [refresh addTarget:self action:@selector(didRefresh) forControlEvents:UIControlEventValueChanged];
+        [self setRefreshControl:refresh];
+        NSAttributedString *label = [[NSAttributedString alloc] initWithString:@"Refreshing..."];
+        [refresh beginRefreshing];
+        [refresh setAttributedTitle:label];
         collection = [[StaffCollection alloc] initWithAllStaffMembers];
         [collection setDelegate:self];
         [collection connectToAPI];
@@ -35,6 +41,13 @@
 - (void)didFinishReceivingCollection
 {
     [self.tableView reloadData];
+    [[self refreshControl] endRefreshing];
+}
+
+- (void)didRefresh
+{
+    [[collection staffCollection] removeAllObjects];
+    [collection connectToAPI];
 }
 
 - (void)viewDidLoad
@@ -42,7 +55,6 @@
     [super viewDidLoad];
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
-    [self.tableView reloadData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
