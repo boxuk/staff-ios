@@ -91,6 +91,11 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
+    ABRecordRef ref = ABPersonCreate();
+    ABRecordSetValue(ref, kABPersonFirstNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] first]), nil);
+    ABRecordSetValue(ref, kABPersonLastNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] last]), nil);
+    ABRecordSetValue(ref, kABPersonJobTitleProperty, @"Developer", nil);
+    [staffVC setDisplayedPerson:ref];
     [self.navigationController pushViewController:staffVC animated:YES];
 }
 
