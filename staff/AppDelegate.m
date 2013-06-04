@@ -10,6 +10,7 @@
 #import "StaffListViewController.h"
 #import <FlatUIKit/UIBarButtonItem+FlatUI.h>
 #import <FlatUIKit/UIColor+FlatUI.h>
+#import <FlatUIKit/UINavigationBar+FlatUI.h>
 #import "StaffCollection.h"
 
 @implementation AppDelegate
@@ -23,6 +24,7 @@
     [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
                                   highlightedColor:[UIColor belizeHoleColor]
                                       cornerRadius:3];
+    [mainNC.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     [self.window setRootViewController:mainNC];
     [self.window makeKeyAndVisible];
     return YES;
