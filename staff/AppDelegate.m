@@ -12,11 +12,13 @@
 #import <FlatUIKit/UIColor+FlatUI.h>
 #import <FlatUIKit/UINavigationBar+FlatUI.h>
 #import "StaffCollection.h"
+#import <NewRelicAgent/NewRelicAgent.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NewRelicAgent startWithApplicationToken:@"AA798fe28c4d5779f03507ce1be099d87cac32918d"];
     StaffListViewController *staffListVC = [[StaffListViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:staffListVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

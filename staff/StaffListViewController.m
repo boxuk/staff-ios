@@ -107,6 +107,12 @@
                                       [NSNumber numberWithInt:kABPersonEmailProperty],
                                                               nil]];
     [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
+    [staffVC setDisplayedPerson:[self getRecordRefForIndexPath:indexPath]];
+    [self.navigationController pushViewController:staffVC animated:YES];
+}
+
+-(ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath
+{
     ABRecordRef ref = ABPersonCreate();
     ABRecordSetValue(ref, kABPersonFirstNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] first]), nil);
     ABRecordSetValue(ref, kABPersonLastNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] last]), nil);
@@ -114,8 +120,7 @@
     ABMultiValueAddValueAndLabel(emailMultiValue, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] email]), kABWorkLabel, NULL);
     ABRecordSetValue(ref, kABPersonEmailProperty, emailMultiValue, nil);
     ABRecordSetValue(ref, kABPersonJobTitleProperty, @"Developer", nil);
-    [staffVC setDisplayedPerson:ref];
-    [self.navigationController pushViewController:staffVC animated:YES];
+    return ref;
 }
 
 

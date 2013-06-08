@@ -1,1 +1,2 @@
 pod 'FlatUIKit'
+pod 'NewRelicAgent'

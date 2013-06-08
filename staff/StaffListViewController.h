@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "StaffCollection.h"
+#import <AddressBookUI/AddressBookUI.h>
 
 @interface StaffListViewController : UITableViewController <StaffCollectionDelegate>
 {
@@ -15,4 +16,5 @@
 }
 
 - (void)didRefresh;
+- (ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath;
 @end
