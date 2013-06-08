@@ -113,7 +113,9 @@
 
 -(ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath
 {
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://www.gardenofwales.org.uk/wp-content/gallery/igpoty-2/image10_xl.jpg"]];
     ABRecordRef ref = ABPersonCreate();
+    ABPersonSetImageData(ref, (__bridge CFDataRef)(imageData), nil);
     ABRecordSetValue(ref, kABPersonFirstNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] first]), nil);
     ABRecordSetValue(ref, kABPersonLastNameProperty, (__bridge CFTypeRef)([[[collection staffCollection] objectAtIndex:indexPath.row] last]), nil);
     ABMutableMultiValueRef emailMultiValue = ABMultiValueCreateMutable(kABPersonEmailProperty);
