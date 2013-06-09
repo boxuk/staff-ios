@@ -13,6 +13,7 @@
 #import <AddressBookUI/AddressBookUI.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIFont+FlatUI.h"
+#import "StaffDisplayViewController.h"
 #import "StaffCollection.h"
 @interface StaffListViewController ()
 
@@ -102,12 +103,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
-    [staffVC setDisplayedProperties:[NSArray arrayWithObjects:
-                                      [NSNumber numberWithInt:kABPersonEmailProperty],
-                                                              nil]];
+//    ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
+//    [staffVC setDisplayedProperties:[NSArray arrayWithObjects:
+//                                      [NSNumber numberWithInt:kABPersonEmailProperty],
+//                                                              nil]];
+    StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
     [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
-    [staffVC setDisplayedPerson:[self getRecordRefForIndexPath:indexPath]];
     [self.navigationController pushViewController:staffVC animated:YES];
 }
 

@@ -19,6 +19,8 @@
 		4D3F0E8B175D070E0087748E /* StaffListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F0E89175D070E0087748E /* StaffListViewController.xib */; };
 		4D3F0E8D175D08600087748E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E8C175D08600087748E /* CoreText.framework */; };
 		4D3F0E99175D0B590087748E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E98175D0B580087748E /* QuartzCore.framework */; };
+		4D71E0951764AAB200494A27 /* StaffDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */; };
+		4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */; };
 		4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
 		4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
 		4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB3175D03A6007C8F50 /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		4D3F0E89175D070E0087748E /* StaffListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffListViewController.xib; sourceTree = "<group>"; };
 		4D3F0E8C175D08600087748E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4D3F0E98175D0B580087748E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4D71E0921764AAB200494A27 /* StaffDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffDisplayViewController.h; sourceTree = "<group>"; };
+		4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffDisplayViewController.m; sourceTree = "<group>"; };
+		4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffDisplayViewController.xib; sourceTree = "<group>"; };
 		4DCBFEAC175D03A6007C8F50 /* staff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFEAF175D03A6007C8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DCBFEB1175D03A6007C8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +142,9 @@
 				4D3F0E87175D070E0087748E /* StaffListViewController.h */,
 				4D3F0E88175D070E0087748E /* StaffListViewController.m */,
 				4D3F0E89175D070E0087748E /* StaffListViewController.xib */,
+				4D71E0921764AAB200494A27 /* StaffDisplayViewController.h */,
+				4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */,
+				4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */,
 			);
 			path = staff;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 				4D376607175E708E0090BB75 /* Default.png in Resources */,
 				4D376609175E70940090BB75 /* Default@2x.png in Resources */,
 				4D37660B175E70B30090BB75 /* Default-568h@2x.png in Resources */,
+				4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 				4D3F0E8A175D070E0087748E /* StaffListViewController.m in Sources */,
 				4D3765BB175D27980090BB75 /* Staff.m in Sources */,
 				4D3765BF175D290C0090BB75 /* StaffCollection.m in Sources */,
+				4D71E0951764AAB200494A27 /* StaffDisplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
