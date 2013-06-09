@@ -11,5 +11,9 @@
 @interface StaffDisplayViewController : UIViewController
 {
     IBOutlet UIImageView *image;
+    IBOutlet UILabel *_nameLbl;
 }
+
+@property NSString *emailAddress;
+@property UILabel *nameLbl;
 @end
