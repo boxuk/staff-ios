@@ -45,6 +45,8 @@
         [newStaffMember setFirst:[staff valueForKey:@"first"]];
         [newStaffMember setLast:[staff valueForKey:@"last"]];
         [newStaffMember setEmail:[staff valueForKey:@"email"]];
+        [newStaffMember setBio:[staff valueForKey:@"bio"]];
+        [newStaffMember setPhone:[[staff valueForKey:@"phone"] stringByReplacingOccurrencesOfString:@" " withString:@""]];
         [staffCollection addObject:newStaffMember];
     }
     [delegate didFinishReceivingCollection];

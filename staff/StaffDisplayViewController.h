@@ -8,13 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "Staff.h"
+#import <FlatUIKit/FUIButton.h>
 
 @interface StaffDisplayViewController : UIViewController
 {
     IBOutlet UIImageView *image;
     IBOutlet UILabel *_nameLbl;
+    IBOutlet UITextView *_bioView;
+    IBOutlet UILabel *_bioLabel;
+    IBOutlet FUIButton *_emailButton;
+    IBOutlet FUIButton *_callButton;
 }
 
 @property Staff *staff;
+
+- (IBAction)didPressCallButton:(id)sender;
 
 @end

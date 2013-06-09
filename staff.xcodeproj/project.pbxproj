@@ -21,6 +21,7 @@
 		4D3F0E99175D0B590087748E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3F0E98175D0B580087748E /* QuartzCore.framework */; };
 		4D71E0951764AAB200494A27 /* StaffDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */; };
 		4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */; };
+		4D71E09A1764DC1E00494A27 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0991764DC1E00494A27 /* 4.gif */; };
 		4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
 		4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
 		4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB3175D03A6007C8F50 /* CoreGraphics.framework */; };
@@ -52,6 +53,7 @@
 		4D71E0921764AAB200494A27 /* StaffDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffDisplayViewController.h; sourceTree = "<group>"; };
 		4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffDisplayViewController.m; sourceTree = "<group>"; };
 		4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffDisplayViewController.xib; sourceTree = "<group>"; };
+		4D71E0991764DC1E00494A27 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
 		4DCBFEAC175D03A6007C8F50 /* staff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFEAF175D03A6007C8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DCBFEB1175D03A6007C8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +154,7 @@
 		4DCBFEB6175D03A6007C8F50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D71E0991764DC1E00494A27 /* 4.gif */,
 				4DCBFEB7175D03A6007C8F50 /* staff-Info.plist */,
 				4DCBFEB8175D03A6007C8F50 /* InfoPlist.strings */,
 				4DCBFEBB175D03A6007C8F50 /* main.m */,
@@ -238,6 +241,7 @@
 				4D376609175E70940090BB75 /* Default@2x.png in Resources */,
 				4D37660B175E70B30090BB75 /* Default-568h@2x.png in Resources */,
 				4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */,
+				4D71E09A1764DC1E00494A27 /* 4.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +379,7 @@
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,7 +393,7 @@
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

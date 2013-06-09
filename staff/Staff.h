@@ -14,6 +14,7 @@
 @property (nonatomic) NSString *last;
 @property (nonatomic) NSString *email;
 @property (nonatomic) NSString *phone;
+@property (nonatomic) NSString *bio;
 
 
 - (NSString *)fullName;

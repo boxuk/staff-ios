@@ -28,16 +28,42 @@
     return self;
 }
 
+- (void)didPressCallButton:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",[[self staff] phone]]]];
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
+    [self setTitle:[[self staff] fullName]];
     [_nameLbl setFont:[UIFont boldFlatFontOfSize:20.0]];
     CALayer *l = [image layer];
     [l setBorderWidth:1.0f];
     [l setBorderColor:[[UIColor midnightBlueColor] CGColor]];
     [l setMasksToBounds:YES];
     [l setCornerRadius:10.0f];
-    [image setImageWithGravatarEmailAddress:[[self staff] email]];
+    [image setImageWithGravatarEmailAddress:[[self staff] email] placeholderImage:nil defaultImageType:KHGravatarDefaultImageMysteryMan rating:KHGravatarRatingG];
     [_nameLbl setText:[[self staff] fullName]];
+    [_bioView setFont:[UIFont flatFontOfSize:16.0f]];
+    [_bioView setBackgroundColor:[UIColor clearColor]];
+    [_bioView setText:[[self staff] bio]];
+    [_bioLabel setFont:[UIFont boldFlatFontOfSize:20.0f]];
+    
+    _emailButton.buttonColor = [UIColor turquoiseColor];
+    _emailButton.shadowColor = [UIColor greenSeaColor];
+    _emailButton.shadowHeight = 3.0f;
+    _emailButton.cornerRadius = 6.0f;
+    _emailButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [_emailButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [_emailButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
+    _callButton.buttonColor = [UIColor turquoiseColor];
+    _callButton.shadowColor = [UIColor greenSeaColor];
+    _callButton.shadowHeight = 3.0f;
+    _callButton.cornerRadius = 6.0f;
+    _callButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [_callButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [_callButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
 }
 
 - (void)viewDidLoad
