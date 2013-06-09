@@ -14,6 +14,7 @@
 {
     IBOutlet UIImageView *image;
     IBOutlet UILabel *_nameLbl;
+    IBOutlet UILabel *_jobLbl;
     IBOutlet UITextView *_bioView;
     IBOutlet UILabel *_bioLabel;
     IBOutlet FUIButton *_emailButton;

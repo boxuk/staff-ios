@@ -37,6 +37,7 @@
 {
     [self setTitle:[[self staff] fullName]];
     [_nameLbl setFont:[UIFont boldFlatFontOfSize:20.0]];
+    [_jobLbl setFont:[UIFont boldFlatFontOfSize:20.0]];
     CALayer *l = [image layer];
     [l setBorderWidth:1.0f];
     [l setBorderColor:[[UIColor midnightBlueColor] CGColor]];
