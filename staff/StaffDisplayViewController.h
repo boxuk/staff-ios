@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Staff.h"
 
 @interface StaffDisplayViewController : UIViewController
 {
@@ -14,6 +15,6 @@
     IBOutlet UILabel *_nameLbl;
 }
 
-@property NSString *emailAddress;
-@property UILabel *nameLbl;
+@property Staff *staff;
+
 @end

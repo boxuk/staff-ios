@@ -36,7 +36,8 @@
     [l setBorderColor:[[UIColor midnightBlueColor] CGColor]];
     [l setMasksToBounds:YES];
     [l setCornerRadius:10.0f];
-    [image setImageWithGravatarEmailAddress:[self emailAddress]];
+    [image setImageWithGravatarEmailAddress:[[self staff] email]];
+    [_nameLbl setText:[[self staff] fullName]];
 }
 
 - (void)viewDidLoad

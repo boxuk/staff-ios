@@ -109,8 +109,7 @@
 //                                                              nil]];
     StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
     [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
-    [staffVC setEmailAddress:[[[collection staffCollection] objectAtIndex:indexPath.row] email]];
-    [[staffVC nameLbl] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
+    [staffVC setStaff:[[collection staffCollection] objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:staffVC animated:YES];
 }
 
