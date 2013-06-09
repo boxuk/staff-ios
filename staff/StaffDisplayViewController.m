@@ -12,6 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <FlatUIKit/UIColor+FlatUI.h>
 #import <FlatUIKit/UIFont+FlatUI.h>
+#import <MessageUI/MessageUI.h>
 
 @interface StaffDisplayViewController ()
 
@@ -31,6 +32,19 @@
 - (void)didPressCallButton:(id)sender
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",[[self staff] phone]]]];
+}
+
+- (void)didPressEmailButton:(id)sender
+{
+    MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+    [mailer setMailComposeDelegate:self];
+    [mailer setToRecipients:[NSArray arrayWithObject:[[self staff] email]]];
+    [self.navigationController presentViewController:mailer animated:YES completion:^{}];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [controller dismissViewControllerAnimated:YES completion:^{}];
 }
 
 -(void)viewWillAppear:(BOOL)animated

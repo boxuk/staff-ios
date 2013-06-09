@@ -22,6 +22,7 @@
 		4D71E0951764AAB200494A27 /* StaffDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */; };
 		4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */; };
 		4D71E09A1764DC1E00494A27 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0991764DC1E00494A27 /* 4.gif */; };
+		4D71E09C1765252300494A27 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D71E09B1765252300494A27 /* MessageUI.framework */; };
 		4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
 		4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
 		4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB3175D03A6007C8F50 /* CoreGraphics.framework */; };
@@ -54,6 +55,7 @@
 		4D71E0931764AAB200494A27 /* StaffDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffDisplayViewController.m; sourceTree = "<group>"; };
 		4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffDisplayViewController.xib; sourceTree = "<group>"; };
 		4D71E0991764DC1E00494A27 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
+		4D71E09B1765252300494A27 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4DCBFEAC175D03A6007C8F50 /* staff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFEAF175D03A6007C8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DCBFEB1175D03A6007C8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D71E09C1765252300494A27 /* MessageUI.framework in Frameworks */,
 				4D376605175E611A0090BB75 /* AddressBook.framework in Frameworks */,
 				4D376603175E5FBC0090BB75 /* AddressBookUI.framework in Frameworks */,
 				4D3765B8175D206D0090BB75 /* libPods.a in Frameworks */,
@@ -118,6 +121,7 @@
 		4DCBFEAE175D03A6007C8F50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D71E09B1765252300494A27 /* MessageUI.framework */,
 				4D376604175E611A0090BB75 /* AddressBook.framework */,
 				4D376602175E5FBC0090BB75 /* AddressBookUI.framework */,
 				4D3F0E98175D0B580087748E /* QuartzCore.framework */,

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Staff.h"
 #import <FlatUIKit/FUIButton.h>
+#import <MessageUI/MessageUI.h>
 
-@interface StaffDisplayViewController : UIViewController
+@interface StaffDisplayViewController : UIViewController <MFMailComposeViewControllerDelegate>
 {
     IBOutlet UIImageView *image;
     IBOutlet UILabel *_nameLbl;
@@ -24,5 +25,6 @@
 @property Staff *staff;
 
 - (IBAction)didPressCallButton:(id)sender;
+- (IBAction)didPressEmailButton:(id)sender;
 
 @end

@@ -45,7 +45,7 @@
         [newStaffMember setFirst:[staff valueForKey:@"first"]];
         [newStaffMember setLast:[staff valueForKey:@"last"]];
         [newStaffMember setEmail:[staff valueForKey:@"email"]];
-        [newStaffMember setBio:[staff valueForKey:@"bio"]];
+        [newStaffMember setBio:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat neque ut massa varius, nec volutpat mauris porta. Praesent lacinia placerat luctus. Duis nec quam eget erat tincidunt interdum sed vel tellus. Cras at iaculis purus. Fusce lacinia libero non lorem laoreet, nec imperdiet nunc porttitor. Sed feugiat nisi semper, fermentum mauris eget, rutrum augue. Nunc mattis orci massa, ac imperdiet metus euismod ut. Donec venenatis mi et arcu aliquam scelerisque. Donec sagittis laoreet massa, at sagittis sapien. Vestibulum sed nisi et ipsum dictum fringilla."];
         [newStaffMember setPhone:[[staff valueForKey:@"phone"] stringByReplacingOccurrencesOfString:@" " withString:@""]];
         [staffCollection addObject:newStaffMember];
     }
