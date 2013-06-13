@@ -8,9 +8,6 @@
 
 #import "AppDelegate.h"
 #import "StaffListViewController.h"
-#import <FlatUIKit/UIBarButtonItem+FlatUI.h>
-#import <FlatUIKit/UIColor+FlatUI.h>
-#import <FlatUIKit/UINavigationBar+FlatUI.h>
 #import "StaffCollection.h"
 #import <NewRelicAgent/NewRelicAgent.h>
 
@@ -23,10 +20,6 @@
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:staffListVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
-                                  highlightedColor:[UIColor belizeHoleColor]
-                                      cornerRadius:3];
-    [mainNC.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     [self.window setRootViewController:mainNC];
     [self.window makeKeyAndVisible];
     return YES;

@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		38FD12264C2647FCB59B63CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1CC0EA176A547C001F8954 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		4D3765B7175D206D0090BB75 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		4D3765B9175D27980090BB75 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
 		4D3765BA175D27980090BB75 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 		4DCBFEAE175D03A6007C8F50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D1CC0EA176A547C001F8954 /* CoreAudio.framework */,
 				4D71E09B1765252300494A27 /* MessageUI.framework */,
 				4D376604175E611A0090BB75 /* AddressBook.framework */,
 				4D376602175E5FBC0090BB75 /* AddressBookUI.framework */,
@@ -216,6 +218,19 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = BoxUK;
+				TargetAttributes = {
+					4DCBFEAB175D03A6007C8F50 = {
+						DevelopmentTeam = 3U7846JR84;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 4DCBFEA7175D03A6007C8F50 /* Build configuration list for PBXProject "staff" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,11 +393,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,11 +409,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

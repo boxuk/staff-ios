@@ -7,9 +7,6 @@
 //
 
 #import "StaffListViewController.h"
-#import <FlatUIKit/UIColor+FlatUI.h>
-#import <FlatUIKit/UINavigationBar+FlatUI.h>
-#import <FlatUIKit/UIBarButtonItem+FlatUI.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIFont+FlatUI.h"
@@ -29,9 +26,7 @@
         UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
         [refresh addTarget:self action:@selector(didRefresh) forControlEvents:UIControlEventValueChanged];
         [self setRefreshControl:refresh];
-        NSAttributedString *label = [[NSAttributedString alloc] initWithString:@"Refreshing..."];
         [refresh beginRefreshing];
-        [refresh setAttributedTitle:label];
         collection = [[StaffCollection alloc] initWithAllStaffMembers];
         [collection setDelegate:self];
         [collection connectToAPI];
@@ -79,12 +74,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [UITableViewCell configureFlatCellWithColor:[UIColor belizeHoleColor]
-                                         selectedColor:[UIColor cloudsColor]
-                                                 style:UITableViewCellStyleValue1
-                                       reuseIdentifier:CellIdentifier];
-    [[cell textLabel] setFont:[UIFont boldFlatFontOfSize:20]];
-    [[cell detailTextLabel] setFont:[UIFont flatFontOfSize:18]];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     [[cell textLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
@@ -108,7 +98,6 @@
 //                                      [NSNumber numberWithInt:kABPersonEmailProperty],
 //                                                              nil]];
     StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
-    [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
     [staffVC setStaff:[[collection staffCollection] objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:staffVC animated:YES];
 }
