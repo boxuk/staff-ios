@@ -1,6 +1,8 @@
 staff-ios
 =========
 
+> This is the source for a version compatible with iOS UI elements
+
 iOS client for [boxuk/staff](https://github.com/boxuk/staff).
 
 ## Running
