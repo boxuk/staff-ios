@@ -1,0 +1,34 @@
+//
+//  StaffTests.m
+//  
+//
+//  Created by Max Woolf on 13/06/2013.
+//
+//
+
+#import <XCTest/XCTest.h>
+
+@interface StaffTests : XCTestCase
+
+@end
+
+@implementation StaffTests
+
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here; it will be run once, before the first test case.
+}
+
+- (void)tearDown
+{
+    // Put teardown code here; it will be run once, after the last test case.
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+@end
