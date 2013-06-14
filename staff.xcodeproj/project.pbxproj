@@ -378,11 +378,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Max Woolf (35C7AH5D5T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E636D912-3937-47A3-ADBC-4500C3EC62F3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E636D912-3937-47A3-ADBC-4500C3EC62F3";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,11 +396,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6A2487AE-FDF0-4255-B0FB-A360178AF371";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
