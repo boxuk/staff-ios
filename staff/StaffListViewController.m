@@ -88,7 +88,7 @@
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     [[cell textLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
-    [[cell detailTextLabel] setText:@"Developer"];
+    [[cell detailTextLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] role]];
     
     return cell;
 }

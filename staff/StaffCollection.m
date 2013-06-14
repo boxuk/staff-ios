@@ -46,6 +46,7 @@
         [newStaffMember setLast:[staff valueForKey:@"last"]];
         [newStaffMember setEmail:[staff valueForKey:@"email"]];
         [newStaffMember setBio:[staff valueForKey:@"bio"]];
+        [newStaffMember setRole:[NSString stringWithFormat:@"%@", [staff valueForKey:@"role"]]];
         [newStaffMember setPhone:[[staff valueForKey:@"phone"] stringByReplacingOccurrencesOfString:@" " withString:@""]];
         [staffCollection addObject:newStaffMember];
     }
