@@ -36,7 +36,6 @@
 - (void)didFinishReceivingCollection
 {
     [self.tableView reloadData];
-    [[self refreshControl] endRefreshing];
 }
 
 - (void)viewDidLoad

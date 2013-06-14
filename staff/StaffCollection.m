@@ -40,6 +40,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSJSONSerialization *json = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:nil];
+    NSMutableArray *list = [[NSMutableArray alloc] init];
     for (NSDictionary *staff in (NSDictionary *)json) {
         Staff *newStaffMember = [[Staff alloc] init];
         [newStaffMember setFirst:[staff valueForKey:@"first"]];
@@ -48,8 +49,13 @@
         [newStaffMember setBio:[staff valueForKey:@"bio"]];
         [newStaffMember setRole:[NSString stringWithFormat:@"%@", [staff valueForKey:@"role"]]];
         [newStaffMember setPhone:[[staff valueForKey:@"phone"] stringByReplacingOccurrencesOfString:@" " withString:@""]];
-        [staffCollection addObject:newStaffMember];
+        [list addObject:newStaffMember];
     }
+    staffCollection = [list sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        NSString *first = [(Staff*)a first];
+        NSString *second = [(Staff*)b first];
+        return [first compare:second];
+    }];
     [delegate didFinishReceivingCollection];
 }
 

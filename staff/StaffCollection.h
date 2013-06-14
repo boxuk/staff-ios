@@ -20,13 +20,13 @@
 {
     NSMutableData *receivedData;
     id delegate;
-    NSMutableArray *staffCollection;
+    NSArray *staffCollection;
 }
 
 - (id)initWithAllStaffMembers;
 - (void)connectToAPI;
 
 @property (nonatomic) id delegate;
-@property (nonatomic) NSMutableArray *staffCollection;
+@property (nonatomic) NSArray *staffCollection;
 
 @end
