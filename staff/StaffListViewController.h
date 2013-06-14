@@ -15,6 +15,5 @@
     StaffCollection *collection;
 }
 
-- (void)didRefresh;
 - (ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath;
 @end

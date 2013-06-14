@@ -26,12 +26,6 @@
     self = [super initWithStyle:style];
     if (self) {
         [self setTitle:@"Staff List"];
-        UIRefreshControl *refresh = [[UIRefreshControl alloc] init];
-        [refresh addTarget:self action:@selector(didRefresh) forControlEvents:UIControlEventValueChanged];
-        [self setRefreshControl:refresh];
-        NSAttributedString *label = [[NSAttributedString alloc] initWithString:@"Refreshing..."];
-        [refresh beginRefreshing];
-        [refresh setAttributedTitle:label];
         collection = [[StaffCollection alloc] initWithAllStaffMembers];
         [collection setDelegate:self];
         [collection connectToAPI];
@@ -43,12 +37,6 @@
 {
     [self.tableView reloadData];
     [[self refreshControl] endRefreshing];
-}
-
-- (void)didRefresh
-{
-    [[collection staffCollection] removeAllObjects];
-    [collection connectToAPI];
 }
 
 - (void)viewDidLoad
