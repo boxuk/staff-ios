@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D17F93B177387F4001A11E3 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4D17F93A177387F4001A11E3 /* .travis.yml */; };
 		4D3765B8175D206D0090BB75 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3765B7175D206D0090BB75 /* libPods.a */; };
 		4D3765BB175D27980090BB75 /* Staff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BA175D27980090BB75 /* Staff.m */; };
 		4D3765BF175D290C0090BB75 /* StaffCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3765BE175D290C0090BB75 /* StaffCollection.m */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		38FD12264C2647FCB59B63CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D17F93A177387F4001A11E3 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		4D3765B7175D206D0090BB75 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		4D3765B9175D27980090BB75 /* Staff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Staff.h; sourceTree = "<group>"; };
 		4D3765BA175D27980090BB75 /* Staff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Staff.m; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				4D3765BA175D27980090BB75 /* Staff.m */,
 				4D3765BD175D290C0090BB75 /* StaffCollection.h */,
 				4D3765BE175D290C0090BB75 /* StaffCollection.m */,
+				4D17F93A177387F4001A11E3 /* .travis.yml */,
 				4DCBFEBE175D03A6007C8F50 /* AppDelegate.h */,
 				4DCBFEBF175D03A6007C8F50 /* AppDelegate.m */,
 				4DCBFEB6175D03A6007C8F50 /* Supporting Files */,
@@ -246,6 +249,7 @@
 				4D37660B175E70B30090BB75 /* Default-568h@2x.png in Resources */,
 				4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */,
 				4D71E09A1764DC1E00494A27 /* 4.gif in Resources */,
+				4D17F93B177387F4001A11E3 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,15 +382,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Max Woolf (35C7AH5D5T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E636D912-3937-47A3-ADBC-4500C3EC62F3";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E636D912-3937-47A3-ADBC-4500C3EC62F3";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,13 +400,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Max Woolf (35C7AH5D5T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6A2487AE-FDF0-4255-B0FB-A360178AF371";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

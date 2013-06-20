@@ -21,7 +21,7 @@
 
 - (void)connectToAPI
 {
-    NSURL *url = [NSURL URLWithString:@"http://staffapp.herokuapp.com/api/employees"];
+    NSURL *url = [NSURL URLWithString:@"http://boxstaff.herokuapp.com/api/employees"];
     NSURLRequest *req = [[NSURLRequest alloc] initWithURL:url];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:req delegate:self];
     [connection start];

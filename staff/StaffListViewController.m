@@ -48,6 +48,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    CGRect newBounds = self.tableView.bounds;
+    newBounds.origin.y = newBounds.origin.y + _searchBar.bounds.size.height;
+    self.tableView.bounds = newBounds;
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,7 +63,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[collection staffCollection] count];
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [_filteredArray count];
+    }else{
+        return [[collection staffCollection] count];
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,12 +79,22 @@
                                          selectedColor:[UIColor cloudsColor]
                                                  style:UITableViewCellStyleValue1
                                        reuseIdentifier:CellIdentifier];
-    [[cell textLabel] setFont:[UIFont boldFlatFontOfSize:20]];
-    [[cell detailTextLabel] setFont:[UIFont flatFontOfSize:18]];
     
-    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    [[cell textLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
-    [[cell detailTextLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] role]];
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        [[cell textLabel] setFont:[UIFont boldFlatFontOfSize:20]];
+        [[cell detailTextLabel] setFont:[UIFont flatFontOfSize:18]];
+        
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        [[cell textLabel] setText:[[_filteredArray objectAtIndex:indexPath.row] fullName]];
+        [[cell detailTextLabel] setText:[[_filteredArray objectAtIndex:indexPath.row] role]];
+    }else{
+        [[cell textLabel] setFont:[UIFont boldFlatFontOfSize:20]];
+        [[cell detailTextLabel] setFont:[UIFont flatFontOfSize:18]];
+        
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        [[cell textLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] fullName]];
+        [[cell detailTextLabel] setText:[[[collection staffCollection] objectAtIndex:indexPath.row] role]];
+    }
     
     return cell;
 }
@@ -112,6 +131,27 @@
     ABRecordSetValue(ref, kABPersonEmailProperty, emailMultiValue, nil);
     ABRecordSetValue(ref, kABPersonJobTitleProperty, @"Developer", nil);
     return ref;
+}
+
+#pragma mark Content Filtering
+
+-(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
+    // Update the filtered array based on the search text and scope.
+    // Remove all objects from the filtered search array
+    [self.filteredArray removeAllObjects];
+    // Filter the array using NSPredicate
+    NSString *attributeName = @"fullName";
+    NSString *attributeValue = searchText;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K contains[c] %@",
+                              attributeName, attributeValue];    _filteredArray = [NSMutableArray arrayWithArray:[[collection staffCollection] filteredArrayUsingPredicate:predicate]];
+}
+
+#pragma mark - UISearchDisplayController Delegate Methods
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    // Tells the table data source to reload when text changes
+    [self filterContentForSearchText:searchString scope:nil];
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
 }
 
 

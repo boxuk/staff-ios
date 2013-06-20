@@ -10,10 +10,13 @@
 #import "StaffCollection.h"
 #import <AddressBookUI/AddressBookUI.h>
 
-@interface StaffListViewController : UITableViewController <StaffCollectionDelegate>
+@interface StaffListViewController : UITableViewController <StaffCollectionDelegate, UISearchDisplayDelegate, UISearchBarDelegate>
 {
     StaffCollection *collection;
 }
+
+@property (nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic) NSMutableArray *filteredArray;
 
 - (ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath;
 @end
