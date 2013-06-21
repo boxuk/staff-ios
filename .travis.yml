@@ -2,4 +2,5 @@ language: objective-c
 before_install:
     - brew update
     - brew install xctool --HEAD
-script: xctool -workspace staff.xcworkspace -scheme 'staff' test
+script: xctool -workspace staff.xcworkspace  -scheme staff run-tests -sdk iphonesimulator
+

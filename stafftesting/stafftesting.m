@@ -13,7 +13,7 @@
 - (void)setUp
 {
     [super setUp];
-    
+    [self setStaff:[[Staff alloc] init]];
     // Set-up code here.
 }
 
@@ -24,9 +24,12 @@
     [super tearDown];
 }
 
-- (void)testExample
+
+- (void)testFullName
 {
-    STFail(@"Unit tests are not implemented yet in stafftesting");
+    [[self staff] setFirst:@"Max"];
+    [[self staff] setLast:@"Woolf"];
+    STAssertEqualObjects(@"Max Woolf", [[self staff] fullName], @"-(NSString *)fullName should return first + last");
 }
 
 @end

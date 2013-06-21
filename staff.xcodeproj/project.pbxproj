@@ -37,6 +37,16 @@
 		4DCBFEC0175D03A6007C8F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCBFEBF175D03A6007C8F50 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4DC3141E177491720094B171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCBFEA4175D03A6007C8F50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DCBFEAB175D03A6007C8F50;
+			remoteInfo = staff;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		38FD12264C2647FCB59B63CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4DC3141F177491720094B171 /* PBXTargetDependency */,
 			);
 			name = stafftesting;
 			productName = stafftesting;
@@ -371,6 +382,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4DC3141F177491720094B171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DCBFEAB175D03A6007C8F50 /* staff */;
+			targetProxy = 4DC3141E177491720094B171 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4DC31414177479830094B171 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -394,6 +413,7 @@
 		4DC3141C177479830094B171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/staff.app/staff";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -402,6 +422,7 @@
 				GCC_PREFIX_HEADER = "stafftesting/stafftesting-Prefix.pch";
 				INFOPLIST_FILE = "stafftesting/stafftesting-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -409,6 +430,7 @@
 		4DC3141D177479830094B171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/staff.app/staff";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -417,6 +439,7 @@
 				GCC_PREFIX_HEADER = "stafftesting/stafftesting-Prefix.pch";
 				INFOPLIST_FILE = "stafftesting/stafftesting-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -485,6 +508,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +526,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "staff/staff-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "staff/staff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,6 +546,7 @@
 				4DC3141D177479830094B171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DCBFEA7175D03A6007C8F50 /* Build configuration list for PBXProject "staff" */ = {
 			isa = XCConfigurationList;

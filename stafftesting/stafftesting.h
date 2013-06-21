@@ -7,7 +7,9 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Staff.h"
 
 @interface stafftesting : SenTestCase
 
+@property (nonatomic) Staff *staff;
 @end
