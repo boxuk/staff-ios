@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "StaffCollection.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 #import <AddressBookUI/AddressBookUI.h>
 
 @interface StaffListViewController : UITableViewController <StaffCollectionDelegate, UISearchDisplayDelegate, UISearchBarDelegate>
 {
     StaffCollection *collection;
+    MBProgressHUD *hud;
 }
 
 @property (nonatomic) IBOutlet UISearchBar *searchBar;

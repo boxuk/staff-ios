@@ -14,6 +14,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UIFont+FlatUI.h"
 #import "StaffDisplayViewController.h"
+#import "MBProgressHUD.h"
 #import "StaffCollection.h"
 @interface StaffListViewController ()
 
@@ -36,6 +37,7 @@
 - (void)didFinishReceivingCollection
 {
     [self.tableView reloadData];
+    [hud hide:YES afterDelay:0.5];
 }
 
 - (void)viewDidLoad
@@ -131,6 +133,14 @@
     ABRecordSetValue(ref, kABPersonEmailProperty, emailMultiValue, nil);
     ABRecordSetValue(ref, kABPersonJobTitleProperty, @"Developer", nil);
     return ref;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"Loading";
+    [hud show:YES];
 }
 
 #pragma mark Content Filtering

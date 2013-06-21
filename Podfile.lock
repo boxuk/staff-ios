@@ -3,18 +3,21 @@ PODS:
   - FlatUIKit (1.1)
   - KHGravatar (0.0.2):
     - AFNetworking (~> 1.0)
+  - MBProgressHUD (0.6)
   - NewRelicAgent (1.328.0)
 
 DEPENDENCIES:
   - AFNetworking
   - FlatUIKit
   - KHGravatar
+  - MBProgressHUD
   - NewRelicAgent
 
 SPEC CHECKSUMS:
   AFNetworking: e528f20d06b1b818c3571266fb5efa20031a8ace
   FlatUIKit: 3b15b582ffcfa4e392bedc4d3c5461f9b11c1cc2
   KHGravatar: 8d7dd9faca58c19b2da4dfa3f9bf32cb1d751776
+  MBProgressHUD: 9b55a90566fb5d07df0602f6fd9fa04510ad5d52
   NewRelicAgent: a60f8bceb92ef17ad5728cb44ead0c3ef1c9e984
 
 COCOAPODS: 0.20.2
