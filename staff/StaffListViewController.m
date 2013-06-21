@@ -50,6 +50,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"Loading";
+    [hud show:YES];
     CGRect newBounds = self.tableView.bounds;
     newBounds.origin.y = newBounds.origin.y + _searchBar.bounds.size.height;
     self.tableView.bounds = newBounds;
@@ -110,15 +114,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    ABPersonViewController *staffVC = [[ABPersonViewController alloc] init];
-//    [staffVC setDisplayedProperties:[NSArray arrayWithObjects:
-//                                      [NSNumber numberWithInt:kABPersonEmailProperty],
-//                                                              nil]];
-    StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
-    [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
-    [staffVC setStaff:[[collection staffCollection] objectAtIndex:indexPath.row]];
-    [self.navigationController pushViewController:staffVC animated:YES];
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
+        [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
+        [staffVC setStaff:[_filteredArray objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:staffVC animated:YES];
+    }else{
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        StaffDisplayViewController *staffVC = [[StaffDisplayViewController alloc] init];
+        [staffVC.view setBackgroundColor:[UIColor cloudsColor]];
+        [staffVC setStaff:[[collection staffCollection] objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:staffVC animated:YES];
+    }
+    
 }
 
 -(ABRecordRef)getRecordRefForIndexPath:(NSIndexPath *)indexPath
@@ -137,10 +146,7 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeIndeterminate;
-    hud.labelText = @"Loading";
-    [hud show:YES];
+    
 }
 
 #pragma mark Content Filtering
