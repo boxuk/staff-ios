@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>staff copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>staff.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>stafftesting.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>4D3765E0175D31500090BB75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DC313D0177478C80094B171</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DC313F6177479170094B171</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DC3140C177479830094B171</key>
 		<dict>
 			<key>primary</key>
 			<true/>

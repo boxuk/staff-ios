@@ -24,6 +24,11 @@
 		4D71E0961764AAB200494A27 /* StaffDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */; };
 		4D71E09A1764DC1E00494A27 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D71E0991764DC1E00494A27 /* 4.gif */; };
 		4D71E09C1765252300494A27 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D71E09B1765252300494A27 /* MessageUI.framework */; };
+		4DC3140E177479830094B171 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFECD175D03A7007C8F50 /* SenTestingKit.framework */; };
+		4DC3140F177479830094B171 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
+		4DC31410177479830094B171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
+		4DC31416177479830094B171 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DC31414177479830094B171 /* InfoPlist.strings */; };
+		4DC31419177479830094B171 /* stafftesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC31418177479830094B171 /* stafftesting.m */; };
 		4DCBFEB0175D03A6007C8F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEAF175D03A6007C8F50 /* UIKit.framework */; };
 		4DCBFEB2175D03A6007C8F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB1175D03A6007C8F50 /* Foundation.framework */; };
 		4DCBFEB4175D03A6007C8F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCBFEB3175D03A6007C8F50 /* CoreGraphics.framework */; };
@@ -58,6 +63,13 @@
 		4D71E0941764AAB200494A27 /* StaffDisplayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffDisplayViewController.xib; sourceTree = "<group>"; };
 		4D71E0991764DC1E00494A27 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
 		4D71E09B1765252300494A27 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4DC313F1177478C90094B171 /* staff copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "staff copy2-Info.plist"; path = "/Users/maxwoolf/Documents/staff-ios/staff copy2-Info.plist"; sourceTree = "<absolute>"; };
+		4DC3140D177479830094B171 /* stafftesting.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stafftesting.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC31413177479830094B171 /* stafftesting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "stafftesting-Info.plist"; sourceTree = "<group>"; };
+		4DC31415177479830094B171 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DC31417177479830094B171 /* stafftesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stafftesting.h; sourceTree = "<group>"; };
+		4DC31418177479830094B171 /* stafftesting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stafftesting.m; sourceTree = "<group>"; };
+		4DC3141A177479830094B171 /* stafftesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "stafftesting-Prefix.pch"; sourceTree = "<group>"; };
 		4DCBFEAC175D03A6007C8F50 /* staff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCBFEAF175D03A6007C8F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DCBFEB1175D03A6007C8F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,13 +81,19 @@
 		4DCBFEBE175D03A6007C8F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DCBFEBF175D03A6007C8F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4DCBFECD175D03A7007C8F50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4DCBFED5175D03A7007C8F50 /* staffTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "staffTests-Info.plist"; sourceTree = "<group>"; };
-		4DCBFED7175D03A7007C8F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4DCBFED9175D03A7007C8F50 /* staffTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = staffTests.h; sourceTree = "<group>"; };
-		4DCBFEDA175D03A7007C8F50 /* staffTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = staffTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4DC31409177479830094B171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC3140E177479830094B171 /* SenTestingKit.framework in Frameworks */,
+				4DC3140F177479830094B171 /* UIKit.framework in Frameworks */,
+				4DC31410177479830094B171 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DCBFEA9175D03A6007C8F50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +113,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC31411177479830094B171 /* stafftesting */ = {
+			isa = PBXGroup;
+			children = (
+				4DC31417177479830094B171 /* stafftesting.h */,
+				4DC31418177479830094B171 /* stafftesting.m */,
+				4DC31412177479830094B171 /* Supporting Files */,
+			);
+			path = stafftesting;
+			sourceTree = "<group>";
+		};
+		4DC31412177479830094B171 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DC31413177479830094B171 /* stafftesting-Info.plist */,
+				4DC31414177479830094B171 /* InfoPlist.strings */,
+				4DC3141A177479830094B171 /* stafftesting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4DCBFEA3175D03A6007C8F50 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +141,13 @@
 				4D376606175E708E0090BB75 /* Default.png */,
 				4D3765B7175D206D0090BB75 /* libPods.a */,
 				4DCBFEB5175D03A6007C8F50 /* staff */,
-				4DCBFED3175D03A7007C8F50 /* staffTests */,
+				4DC31411177479830094B171 /* stafftesting */,
 				4DCBFEAE175D03A6007C8F50 /* Frameworks */,
 				4DCBFEAD175D03A6007C8F50 /* Products */,
 				1C817F7B172F43CCB59BD4DF /* Pods.xcconfig */,
 				4D3765DF175D311F0090BB75 /* staff copy-Info.plist */,
 				4D3765FC175D31500090BB75 /* staffTests copy-Info.plist */,
+				4DC313F1177478C90094B171 /* staff copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				4DCBFEAC175D03A6007C8F50 /* staff.app */,
+				4DC3140D177479830094B171 /* stafftesting.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,28 +210,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4DCBFED3175D03A7007C8F50 /* staffTests */ = {
-			isa = PBXGroup;
-			children = (
-				4DCBFED9175D03A7007C8F50 /* staffTests.h */,
-				4DCBFEDA175D03A7007C8F50 /* staffTests.m */,
-				4DCBFED4175D03A7007C8F50 /* Supporting Files */,
-			);
-			path = staffTests;
-			sourceTree = "<group>";
-		};
-		4DCBFED4175D03A7007C8F50 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4DCBFED5175D03A7007C8F50 /* staffTests-Info.plist */,
-				4DCBFED6175D03A7007C8F50 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4DC3140C177479830094B171 /* stafftesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC3141B177479830094B171 /* Build configuration list for PBXNativeTarget "stafftesting" */;
+			buildPhases = (
+				4DC31408177479830094B171 /* Sources */,
+				4DC31409177479830094B171 /* Frameworks */,
+				4DC3140A177479830094B171 /* Resources */,
+				4DC3140B177479830094B171 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stafftesting;
+			productName = stafftesting;
+			productReference = 4DC3140D177479830094B171 /* stafftesting.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		4DCBFEAB175D03A6007C8F50 /* staff */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DCBFEDE175D03A7007C8F50 /* Build configuration list for PBXNativeTarget "staff" */;
@@ -233,11 +272,20 @@
 			projectRoot = "";
 			targets = (
 				4DCBFEAB175D03A6007C8F50 /* staff */,
+				4DC3140C177479830094B171 /* stafftesting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4DC3140A177479830094B171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC31416177479830094B171 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DCBFEAA175D03A6007C8F50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +304,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4DC3140B177479830094B171 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		6027FA44AD314009844B43F5 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +348,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4DC31408177479830094B171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC31419177479830094B171 /* stafftesting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DCBFEA8175D03A6007C8F50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +372,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4DC31414177479830094B171 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC31415177479830094B171 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		4DCBFEB8175D03A6007C8F50 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -311,17 +388,39 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4DCBFED6175D03A7007C8F50 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DCBFED7175D03A7007C8F50 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4DC3141C177479830094B171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "stafftesting/stafftesting-Prefix.pch";
+				INFOPLIST_FILE = "stafftesting/stafftesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4DC3141D177479830094B171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "stafftesting/stafftesting-Prefix.pch";
+				INFOPLIST_FILE = "stafftesting/stafftesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		4DCBFEDC175D03A7007C8F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +514,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4DC3141B177479830094B171 /* Build configuration list for PBXNativeTarget "stafftesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC3141C177479830094B171 /* Debug */,
+				4DC3141D177479830094B171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4DCBFEA7175D03A6007C8F50 /* Build configuration list for PBXProject "staff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
